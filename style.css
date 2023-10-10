@@ -1,0 +1,156 @@
+button, #submit{
+  border: solid;
+  border-radius: 5px;
+  border-color: rgb(227, 225, 225);
+  background-color: rgb(245, 243, 243);
+  cursor: pointer;
+}
+button:hover{
+  background-color: white;
+}
+.header{
+  display: flex;
+  border: solid;
+  border-radius: 5px;
+  border-color: rgb(227, 225, 225);
+  margin-bottom: 2px;
+}
+.title{
+  width: 50%;
+}
+#title{
+  margin: 10%;
+  font-size: 300%;
+  font-style: italic;
+}
+.container{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 2%;
+
+}
+.items{
+height: 25px;
+margin: 0.5%;
+border-radius: 5px;
+
+}
+.navi{
+  height: 100px;
+  width: 50%;
+}
+.first{
+  background-color: rgb(245, 243, 243);
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-evenly
+}
+
+
+.titleRow{
+  background-color: rgb(246, 223, 223);
+}
+footer{
+  height: 3000px;
+}
+
+table{
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+  margin-top: 4%;
+  padding: 2%;
+  width: 95%;
+  background-color: rgb(242, 236, 236);
+}
+.third{
+  height: 45%;
+}
+#login{
+  width:90%;
+  height: 70%;
+  padding: 2%;
+  border-radius: 5px;
+  border: solid;
+  border-color: rgb(227, 225, 225);
+  display: flex;
+
+}
+#loginInput{
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+#benutzername{
+  margin-bottom: 10px;
+}
+
+#send{
+margin: 20px;
+
+}
+#submit{
+cursor: pointer;
+}
+#submit:hover{
+background-color: white;
+}
+
+
+.div1{
+  background-color: rgb(245, 243, 243);
+  display: flex; 
+  height: 400px;
+  padding: 0px;
+  margin-top: 2%;
+  
+}
+.div2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+}
+.div3{
+  display: flex;
+  padding: 0px;
+  height:50%;
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+}
+.div4{
+  display: flex;
+  width: 50%;
+  padding: 0px;
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+}
+.div5{
+  background-color: rgb(245, 243, 243);
+  width: 50%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+}
+.div6{
+  background-color:rgb(245, 243, 243);
+  height: 50%;
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+}
