@@ -1,0 +1,109 @@
+body{
+  padding: 4%;
+}
+
+button:hover{
+  cursor: pointer;
+  color: orangered;
+}
+
+#title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 4%;
+}
+
+#navi{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navi-button{
+  margin: 6px;
+  background-color: aliceblue;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+
+}
+
+#sayHi{
+  padding: 20%;
+}
+
+#submit{
+  margin-top: 2%;
+  background-color: aliceblue;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+
+}
+
+#messageContainer{
+  padding: 2% 7%;
+  display: inline-block;
+}
+
+#message{
+  width: 100%;
+}
+
+#photoTitle{
+  padding: 4%;
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.imgItems{
+  margin: 6%;
+  border-radius: 5px;
+  border: solid;
+  border-style: double;
+}
+
+table{
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+  margin-top: 4%;
+  padding: 2%;
+  width: 95%;
+  background-color: rgb(242, 236, 236);
+}
+
+
+.divA{
+  background-color: rgb(245, 243, 243);
+  display: flex; 
+  padding: 0px;
+  margin-top: 2%;
+  height: 500px;
+}
+.divB{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+
+}
+.divC{
+  display: flex;
+  padding: 0px;
+  height:50%;
+  border: solid;
+  border-color:  rgb(227, 225, 225);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+footer{
+  height: 3000px;
+}
