@@ -22,6 +22,8 @@ body{
   background-color: rgb(90, 47, 97);
   color:rgb(228, 203, 232);
   border-radius: 30% 15%;
+  padding: 5px;
+  margin-right: 10px;
 
 }
 .navi-button:hover{
@@ -105,19 +107,17 @@ table{
   display: flex; 
   padding: 0px;
   margin-top: 2%;
-  height: 500px;
   border-radius: 5px;
 }
 .divB{
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  align-items: stretch;
-
+  padding: 15px;
 }
 .divC{
   display: flex;
-  margin: 5px 10px;
+  margin: 10px 5px;
   border-radius: 5px;
   background-color: rgb(197, 197, 221);
 
