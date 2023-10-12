@@ -10,16 +10,22 @@
 
     <h1 id="title">Jing Li</h1>
     <div id="navi">
-      <a href="index.html"><button class="navi-button">Home</button></a>
-      <a href="intro.html"><button class="navi-button">About me</button></a>
-      <a href="qualifications.html"><button class="navi-button">Qualifications</button></a>
-      <a href="projects.html"><button class="navi-button">Projects</button></a>
-      <a href="contact.html"><button class="navi-button">Contact</button></a>
+      <a href="index.html"><button class="navi-button" title="Homepage">Home</button></a>
+      <a href="intro.html"><button class="navi-button" title="Information about me">Introduction</button></a>
+      <a href="qualifications.html"><button class="navi-button" title="My qualifications">Qualifications</button></a>
+      <a href="projects.html"><button class="navi-button" title="My works">Projects</button></a>
+      <a href="contact.html"><button class="navi-button" title="Click here to contact me">Contact</button></a>
     </div>
 
   <div class="divA">
     <div class="divB">
-      <h2 id="sayHi">Hello! I'm Jing from Berlin. Welcome to my homepage! I'm currently working on it.</h2>
+      <div class="divC">
+        <h2 id="sayHi">Hello! I'm Jing from Berlin. Welcome to my homepage! I'm currently working on it.</h2>
+      </div>
+      <div class="divC">
+        <button id="like" onclick="like++; alert(`You've send ${like} likes. Thanks!`)">Like the Page</button>
+        <p id="likes"></p>
+      </div>
     </div>
 
     <div class="divB">
@@ -32,12 +38,16 @@
         <form>
           <label for="message"><h3>Leave me a short message :-)</h3></label>
           <input id="message" placeholder="What do you want to say?">
-          <input type="submit" id="submit">
+          <input type="submit" id="submit" onclick="alert('Thank you!')">
         </form>
       </div>
     </div>
   </div>
 
   <footer></footer>
+  <script>
+    let like = 0;
+  </script>
 </body>
 </html>
+
