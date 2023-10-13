@@ -48,18 +48,22 @@
     <button onclick="playGame('rock')" class="gameButton">Rock</button>
     <button onclick="playGame('paper')" class="gameButton">Paper</button>
     <button onclick="playGame('scissors')" class="gameButton">Scissor</button>
+    <button class="gameButton" onclick="score.wins = 0, score.losses = 0, score.ties = 0, alert('scores reset!')">Reset</button>
   </div>
 
 
   <footer></footer>
   <script>
-    let like = 0;
+    let like = JSON.parse(localStorage.getItem('like')) || {
+      number:0
+    };
     function likePage(){
-      like++; 
-      alert(`You've send ${like} likes. Thanks!`)
+      like.number++; 
+      localStorage.setItem('like', JSON.stringify(like));
+      alert(`You've send ${like.number} likes. Thanks!`)
     }
 
-    const myChoice = computerChoice();
+
   
     function computerChoice(){
       let randomNum = 0;
@@ -76,11 +80,18 @@
       return randomChoice;
     }
 
+    let score = JSON.parse(localStorage.getItem('score')) || {
+      wins: 0,
+      losses: 0,
+      ties: 0
+    };
+
     function playGame(yourChoice) {
+      const myChoice = computerChoice();
       let result = '';
       if (myChoice === 'rock'){
         if(yourChoice === 'rock'){
-          result = 'Tie';
+          result = 'Tie.';
         } else if(yourChoice === 'paper'){
           result = 'You win!';
         } else{
@@ -88,7 +99,7 @@
         }
       } else if (myChoice === 'paper'){
         if(yourChoice === 'paper'){
-          result = 'Tie';
+          result = 'Tie.';
         } else if(yourChoice === 'scissors'){
           result = 'You win!';
         } else{
@@ -96,14 +107,25 @@
         }
       } else if (myChoice === 'scissors'){
         if(yourChoice === 'scissors'){
-          result = 'Tie';
+          result = 'Tie.';
         } else if(yourChoice === 'rock'){
           result = 'You win!';
         } else{
           result = 'You loose.';
         }
       }
-      alert(`You chose ${yourChoice}, I chose ${myChoice}, ${result}`);
+      if(result === 'Tie.'){
+        score.ties ++;
+      } else if (result === 'You win!'){
+        score.wins ++;
+      } else if (result === 'You loose.') { 
+        score.losses ++;
+      }
+
+      localStorage.setItem('score', JSON.stringify(score));
+
+      alert(`You chose ${yourChoice}, I chose ${myChoice}, ${result}
+Wins: ${score.wins} Losses: ${score.losses} Ties: ${score.ties}`);
     }
  
   </script>
