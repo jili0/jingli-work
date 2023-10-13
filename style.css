@@ -1,9 +1,7 @@
 body{
   padding: 4%;
   background-color: rgb(81, 81, 128);
-
 }
-
 
 
 #title{
@@ -11,6 +9,11 @@ body{
   padding-left: 4%;
   color:rgb(207, 190, 207);
   font-weight: 200;
+}
+
+button{
+  background-color: rgb(228, 203, 232);
+  color: rgb(90, 47, 97);
 }
 
 #navi{
@@ -41,8 +44,6 @@ body{
   margin-left: 10%;
   border-radius: 50%;
   border: none;
-  background-color: rgb(180, 86, 158);
-  color:rgb(221, 221, 236);
 }
 
 #like{
@@ -105,7 +106,7 @@ table{
 .divA{
   background-color: rgb(162, 162, 202);
   display: flex; 
-  padding: 0px;
+  padding: 20px;
   margin-top: 2%;
   border-radius: 5px;
 }
@@ -128,7 +129,16 @@ input{
   border: none;
 }
 
+p{
+  margin: 15px;
+}
 
+.gameButton{
+  margin-left: 10px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+}
 
 
 

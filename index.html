@@ -23,7 +23,7 @@
         <h2 id="sayHi">Hello! I'm Jing. Welcome to my homepage! I'm currently working on it.</h2>
       </div>
       <div class="divC">
-        <button id="like" onclick="like++; alert(`You've send ${like} likes. Thanks!`)">Like the Page</button>
+        <button id="like" onclick="likePage()">Like Page</button>
         <p id="likes"></p>
       </div>
     </div>
@@ -43,11 +43,69 @@
       </div>
     </div>
   </div>
+  <div class="divA">
+    <p>Feel free to explore my page! Let's start with a Rock Paper Scissors game. Click to choose:</p>
+    <button onclick="playGame('rock')" class="gameButton">Rock</button>
+    <button onclick="playGame('paper')" class="gameButton">Paper</button>
+    <button onclick="playGame('scissors')" class="gameButton">Scissor</button>
+  </div>
+
 
   <footer></footer>
   <script>
     let like = 0;
+    function likePage(){
+      like++; 
+      alert(`You've send ${like} likes. Thanks!`)
+    }
+
+    const myChoice = computerChoice();
+  
+    function computerChoice(){
+      let randomNum = 0;
+      let randomChoice = '';
+    
+      randomNum = Math.random();
+      if(randomNum > 0 && randomNum <= 1/3){
+        randomChoice = 'rock';
+      } else if(randomNum > 1/3 && randomNum <= 2/3){
+        randomChoice = 'paper';
+      } else if(randomNum > 2/3 && randomNum < 1){
+        randomChoice = 'scissors';
+      }
+      return randomChoice;
+    }
+
+    function playGame(yourChoice) {
+      let result = '';
+      if (myChoice === 'rock'){
+        if(yourChoice === 'rock'){
+          result = 'Tie';
+        } else if(yourChoice === 'paper'){
+          result = 'You win!';
+        } else{
+          result = 'You loose.';
+        }
+      } else if (myChoice === 'paper'){
+        if(yourChoice === 'paper'){
+          result = 'Tie';
+        } else if(yourChoice === 'scissors'){
+          result = 'You win!';
+        } else{
+          result = 'You loose.';
+        }
+      } else if (myChoice === 'scissors'){
+        if(yourChoice === 'scissors'){
+          result = 'Tie';
+        } else if(yourChoice === 'rock'){
+          result = 'You win!';
+        } else{
+          result = 'You loose.';
+        }
+      }
+      alert(`You chose ${yourChoice}, I chose ${myChoice}, ${result}`);
+    }
+ 
   </script>
 </body>
 </html>
-
