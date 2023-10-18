@@ -1,0 +1,50 @@
+body{
+    color:aliceblue;
+    background-color: black;
+    font-family: Arial;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+#contactMe{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+input{
+    padding: 10px;
+}
+
+textarea:not([rows]){
+    height: 140px;
+}
+
+textarea:not([cols]){
+    width: 97%;
+}
+
+textarea, input{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(199, 162, 162);
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+textarea{
+    resize: vertical;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: solid aliceblue 0.5px;
+}
+
+a{
+ color:aliceblue;
+ margin: 10px;
+}
