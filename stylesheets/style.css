@@ -1,19 +1,14 @@
 body{
   padding: 4%;
-  background-color: rgb(81, 81, 128);
+  background-color: black;
+  color:gainsboro;
 }
 
 
 #title{
-  font-size: 400%;
+  font-size: 200%;
   padding-left: 4%;
-  color:rgb(207, 190, 207);
   font-weight: 200;
-}
-
-button{
-  background-color: rgb(228, 203, 232);
-  color: rgb(90, 47, 97);
 }
 
 #navi{
@@ -22,126 +17,74 @@ button{
 }
 
 .navi-button{
-  background-color: rgb(90, 47, 97);
-  color:rgb(228, 203, 232);
-  border-radius: 30% 15%;
+  background-color:black;
+  color: rgb(255, 127, 202);
+  border-radius: 3px;
+  border:none;
   padding: 5px;
   margin-right: 10px;
 
 }
 .navi-button:hover{
-  background-color: rgb(217, 195, 220);
-  color: rgb(90, 47, 97);
+  background-color:rgb(255, 127, 202);
+  color: black;
   cursor: pointer;
 }
 
-#sayHi{
-  padding: 20%;
-  font-weight: 200;
+.container{
+  border: solid 1px gainsboro;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  min-height: 800px;
+  height: 900px;
+  margin-top: 10px;
+  padding: 10px;
 }
-#like{
-  padding: 5%;
-  margin-left: 10%;
-  border-radius: 50%;
-  border: none;
+.item{
+  border: solid 1px gainsboro;
+  border-radius: 6px;
+  padding: 10px;
 }
+.left{
+  width: 20%;
 
-#like{
-  margin: 5% 30%;
-
-}
-
-#submit{
-  margin-top: 2%;
-  background-color: aliceblue;
-  border-radius: 30% 15%;
-
-}
-
-#submit:hover{
-  color: rgb(90, 47, 97);
-  background-color: rgb(210, 188, 213);
-  border-top: solid 1px;
-  border-top-color: rgb(228, 219, 230);
-  border-bottom: solid 1px;
-  border-bottom-color: rgb(90, 47, 97);
-  cursor: pointer;
-}
-#messageContainer{
-  padding: 2% 7%;
-  display: inline-block;
 }
 
 #message{
-  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  width: 95%;
 }
 
-#photoTitle{
-  padding: 4%;
+#send{
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(255, 127, 202);
+  padding: 5px 10px;
 }
 
-.imgContainer{
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
+.message{
+  border: solid 1px gainsboro;
+  border-radius: 6px;
+  margin: 10px 0px;
+  height: 785px;
+  overflow: auto;
 }
 
-.imgItems{
-  margin: 6px 1px;
-  border-radius: 5px;
+.middle{
+  width: 50%;
+  margin: 0px 10px;
+}
+
+.right{
   width: 30%;
 }
 
-table{
-  border: solid;
-  border-color:  rgb(227, 225, 225);
-  border-radius: 5px;
-  margin-top: 4%;
-  padding: 2%;
-  width: 95%;
-  background-color: rgb(242, 236, 236);
-}
-
-
-.divA{
-  background-color: rgb(162, 162, 202);
-  display: flex; 
-  padding: 20px;
-  margin-top: 2%;
-  border-radius: 5px;
-}
-.divB{
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  padding: 15px;
-}
-.divC{
-  display: flex;
-  margin: 10px 5px;
-  border-radius: 5px;
-  background-color: rgb(197, 197, 221);
-
-}
-
-input{
-  border-radius: 5px;
-  border: none;
-}
-
-p{
-  margin: 15px;
-}
-
-.gameButton{
-  margin-left: 10px;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-}
-
-
 
 footer{
-  height: 3000px;
+  height: 1000px;
 }
