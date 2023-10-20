@@ -1,15 +1,16 @@
 let postRemark = document.querySelector('.postRemark');
-let remark = 'Remark: Hi, you can write and post some comments here. You will see a message box, which shows you the comment that you\'ve just post; And you can see all your comments listed in the Comment Board below, with the local time attached to them. There are also some default messages in the Comment Board. If you click "Clear local", however, all comments that you\'ve posted will be removed. This is because the comment messages are just saved in the localstorage of your computer. I\'m currently learning PHP and mySQL, and later the comments should be saved in a real Database. Let\'s see!';
-let text = '';
-function printNextLetter () {  
-        if (remark.length > text.length) {
-            let letterToPrint = remark[text.length];
-            postRemark.innerHTML += letterToPrint;
-            text += letterToPrint;
+let remark = 'Hi, you can write and post some comments here. Please try it out! <br><br>You will see a message box, which shows you the comment that you\'ve just post; And you can see all your comments listed in the Comment Board below, with the local time attached to them. <br><br>There are also some default messages in the Comment Board. If you click "Clear local", all comments that you\'ve posted will be removed and only the default messages are left. <br><br> This is because the comment messages are just saved in the localstorage of your computer. I\'m currently learning PHP and mySQL, and later the comments should be saved in a real Database. <br><br>Let\'s see! <br><br> --- a remark from Jing Li';
+let array = remark.split(' ');
+let index = 0;
+function printNextWord () {  
+        if (array.length > index) {
+            let wordToPrint = array[index];
+            postRemark.innerHTML += wordToPrint + ' ';
+            index++;
         } 
-        setTimeout(printNextLetter, 40);
+        setTimeout(printNextWord, 120);
 }
-printNextLetter();
+printNextWord();
 
 
 

@@ -3,17 +3,17 @@ let remark = 'Hi there,<br><br> welcome to my work place. I\'m doing some experi
 let index = 0;
 let array = remark.split(' ');
 
-function printNextLetter () {  
+function printNextWord () {  
     if (array.length > index) {
         let wordToPrint = array[index];
         postRemark.innerHTML += wordToPrint + ' ';
         index++;
     } 
-        setTimeout(printNextLetter, 120); 
+        setTimeout(printNextWord, 120); 
 }
 
 setTimeout(()=>{
-printNextLetter();
+printNextWord();
 }, 1000);
 
 
