@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
-<body>
+<body onload="updateMessage()">
     <h1 id="title">Jing Li</h1>
     <div id="navi">
       <a href="index.html"><button class="navi-button" title="Homepage">Home</button></a>
@@ -22,8 +22,10 @@
         <label for="message">Write a message:</label>
         <input id="message">
         <button id="send">Send</button>
-        <div class="js-new-message"></div>
+        <button id="clear">Clear local</button>
+        <button id="local">Show local</button>
         <div class="js-message message"></div>
+        <div class="js-new-message"></div>
       </div>
       <div class="item middle">
 blog
