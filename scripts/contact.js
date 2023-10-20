@@ -9,3 +9,11 @@ document.querySelector('#message').addEventListener("change", function(){
     let showMessage = document.querySelector('#showMessage');
     showMessage.innerText = `Your message: ${yourMessage}`;
 });
+
+document.querySelector('#submit').addEventListener('click', ()=>{
+    location. href = "https://jingli.work/contact-send.html";
+});
+
+document.querySelector('#redirect').addEventListener('click', ()=>{
+    location. href = "https://jingli.work";
+});

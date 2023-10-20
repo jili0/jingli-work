@@ -4,7 +4,7 @@ body{
     font-family: Arial;
     margin: 20px auto;
     max-width: 800px;
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 10px;
 }
 
@@ -43,13 +43,17 @@ fieldset{
     border: solid rgb(255, 127, 202) 0.2px;
 }
 
-#submit{
-background-color:  rgb(255, 127, 202) ;
+#submit, #redirect{
+color: rgb(255, 127, 202) ;
+background-color: black;
+border: none;
+border-radius: 6px;
+padding: 10px;
 }
 
-a{
- color: gainsboro;
- margin: 10px;
+#submit:hover, #redirect:hover{
+    background-color:  rgb(255, 127, 202) ;
+    color: black;
 }
 
 footer{

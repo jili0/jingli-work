@@ -1,0 +1,21 @@
+body{
+    color: gainsboro;
+    background-color: black;
+    font-family: Arial;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.2;
+    padding: 10px;
+}
+button{
+    color: rgb(255, 127, 202) ;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    }
+    
+button:hover{
+    background-color:  rgb(255, 127, 202) ;
+    color: black;
+}

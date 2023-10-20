@@ -1,7 +1,6 @@
 let input = document.querySelector('#message');
 let newMessage = document.querySelector('.js-new-message');
 let send = document.querySelector('#send');
-let clear = document.querySelector('#clear');
 let messageContainer =  document.querySelector('.js-message');
 let savedMessage = ["Why don't scientists trust atoms? Because they make up everything!",
 "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them.",
@@ -23,18 +22,17 @@ function updateMessage() {
     let keys = Object.keys(localStorage);
     let length = keys.length;
     let array = [];
+    let date = '';
     for (let i = 0; i < length; i++) {
         let item = localStorage.getItem(keys[i]);
-        let date = new Date(keys[i] / 1);
-        console.log(date.toUTCString());
-
+        date = new Date(keys[i] / 1).toUTCString();
         array.push(item); 
         array.sort();  
         array.reverse();                                                                                                         
         console.log(`array: ${array}`);
     }
     for(let i=0; i<array.length; i++) {
-        messageContainer.innerHTML += `<p>${array[i]}<br>-------------</p>`;
+        messageContainer.innerHTML += `<p>${array[i]}<br>${date}<br>-------------</p>`;
     }
     for(let i=0; i<savedMessage.length; i++) {
         messageContainer.innerHTML += `<p>${savedMessage[i]}<br>-------------</p>`;
@@ -53,6 +51,8 @@ send.addEventListener('click', ()=>{
     console.log(localStorage);
 });
 
+/*
+let clear = document.querySelector('#clear');
 clear.addEventListener('click', ()=>{
     localStorage.clear();
     location.reload();
@@ -64,3 +64,5 @@ let local = document.querySelector('#local');
 local.addEventListener('click',()=>{
     console.log(localStorage);
 });
+
+*/
