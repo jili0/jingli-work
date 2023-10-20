@@ -21,27 +21,28 @@ function updateMessage() {
     messageContainer.innerHTML = '';
     let keys = Object.keys(localStorage);
     let length = keys.length;
-    let array = [];
+    let storedItems = [];
     let date = '';
     for (let i = 0; i < length; i++) {
         let item = localStorage.getItem(keys[i]);
-        date = new Date(keys[i] / 1).toUTCString();
-        array.push(item); 
-        array.sort();  
-        array.reverse();                                                                                                         
-        console.log(`array: ${array}`);
+        date = new Date(keys[i] / 1).toLocaleDateString() + ', ' +  new Date(keys[i] / 1).toLocaleTimeString();
+        storedItems.push(item); 
+        storedItems.sort();  
+        storedItems.reverse();                                                                                                         
+        console.log(`storedItems: ${storedItems}`);
     }
-    for(let i=0; i<array.length; i++) {
-        messageContainer.innerHTML += `<p>${array[i]}<br>${date}<br>-------------</p>`;
+    for(let i=0; i<storedItems.length; i++) {
+        messageContainer.innerHTML += `<p>${storedItems[i]}<br>${date}<br>-------------</p>`;
     }
     for(let i=0; i<savedMessage.length; i++) {
-        messageContainer.innerHTML += `<p>${savedMessage[i]}<br>-------------</p>`;
+        let date = new Date().toLocaleDateString() + ', ' +new Date().toLocaleTimeString();
+        messageContainer.innerHTML += `<p>${savedMessage[i]}<br>${date}<br>-------------</p>`;
     }
 }
 
 send.addEventListener('click', ()=>{
     if (input.value) {
-    newMessage.innerHTML = `<p>You just send a message: <br>${input.value}</p>`;
+    newMessage.innerHTML = `<p>Your message: ${input.value}</p>`;
     
     let date = new Date();
     let itemName = date.getTime();

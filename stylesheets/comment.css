@@ -46,15 +46,24 @@ button:hover{
 
 .new-message{
 text-align: center;
-background-color:  rgb(255, 127, 202) ;
-color: black;
+color: gainsboro;
+border: solid 1px  rgb(255, 127, 202) ;;
+border-style: dotted;
 border-radius: 6px;
 }
 
 #commentBoard{
     text-align: center;
 }
-
+.message{
+    max-height: 1200px;
+    padding: 10px;
+    border: solid 1px  gainsboro;
+    border-radius: 6px;
+    overflow: auto;
+}
 footer{
     height: 1000px;
+
+
   }
