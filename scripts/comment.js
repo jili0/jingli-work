@@ -7,7 +7,7 @@ function printNextLetter () {
             postRemark.innerHTML += letterToPrint;
             text += letterToPrint;
         } 
-        setTimeout(printNextLetter, 50);
+        setTimeout(printNextLetter, 40);
 }
 printNextLetter();
 

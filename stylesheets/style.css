@@ -39,7 +39,6 @@ body{
   display: flex;
   justify-content: space-around;
   min-height: 800px;
-  height: 900px;
   margin-top: 10px;
   padding: 10px;
 }
@@ -52,6 +51,11 @@ body{
   width: 20%;
 
 }
+.mail{
+  color: rgb(255, 127, 202);
+  font-size: 80%;
+  text-decoration: underline;
+}
 
 #message{
   margin-top: 5px;
@@ -61,7 +65,7 @@ body{
   width: 95%;
 }
 
-#send, #clear, #local{
+#send, #clear {
 
   margin: 10px 5px 0px 0px;
   border: none;
