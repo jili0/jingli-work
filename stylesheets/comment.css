@@ -11,20 +11,7 @@ body{
 #title{
     margin-top: 50px;
     font-size: 120%;
-}
-
-input{
-    padding: 10px;
-}
-
-textarea:not([rows]){
-    height: 140px;
-}
-
-textarea:not([cols]){
-    width: 97%;
-}
-
+} 
 textarea{
     border-radius: 5px;
     border: none;
@@ -34,30 +21,40 @@ textarea{
     font-size: 18px;
     font-family: Arial;
 }
-
-textarea{
-    resize: vertical;
+textarea:not([rows]){
+    height: 140px;
 }
 
-fieldset{
-    border-radius: 5px;
-    border: solid rgb(255, 127, 202) 0.2px;
+textarea:not([cols]){
+    width: 97%;
+}
+
+button{
+    color: rgb(255, 127, 202) ;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-#submit, #redirect{
-color: rgb(255, 127, 202) ;
-background-color: black;
-border: none;
-border-radius: 6px;
-padding: 10px;
-}
-
-#submit:hover, #redirect:hover{
+    
+button:hover{
     background-color:  rgb(255, 127, 202) ;
     color: black;
 }
 
+.new-message{
+text-align: center;
+background-color:  rgb(255, 127, 202) ;
+color: black;
+border-radius: 6px;
+}
+
+#commentBoard{
+    text-align: center;
+}
+
 footer{
     height: 1000px;
-}
+  }
