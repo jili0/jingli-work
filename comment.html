@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="stylesheets/comment.css">
 </head>
 <body  onload="updateMessage()">
+  <div>
     <p id="title">Write a comment:</p>
-    <textarea id="message" placeholder="Your Comment"></textarea>
-    <button id="send" class="">Send</button>
-    <button id="clear">Clear local</button>
-    <div class="js-new-message new-message"></div>
-    <p id="commentBoard">Comment Board</p>
-    <div class="js-message message"></div>
+  </div>
+  <div class="container">
+    <div class="div1">
+      <p class="postRemark"></p>
+    </div>
+    <div class="div2">
+
+      <textarea id="message" placeholder="Your Comment"></textarea>
+      <button id="send" class="">Send</button>
+      <button id="clear">Clear local</button>
+      <div class="js-new-message new-message"></div>
+      <p id="commentBoard">Comment Board</p>
+      <div class="js-message message"></div>
+    </div>
 
   </div>
+
   <footer></footer>
   <script src="scripts/comment.js"></script>
 </body>
