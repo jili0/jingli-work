@@ -1,0 +1,67 @@
+.blogs{
+    max-height: 800px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blogHeader{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(255, 127, 202);
+    
+}
+
+.blogHeaderTitle{
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#page{
+    display: inline;
+    font-size: 14px;    
+}
+
+.blog{
+    border: solid 1px gainsboro;
+    border-radius: 6px;
+    border-style:dashed;
+    margin: 5px;
+    padding: 0px 10px;
+    height: 180px;
+
+}
+
+.blogTitle{
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.blogTime{
+    text-align: right;
+    font-size: 14px;
+    line-height: 0.1;
+}
+
+.blogInhalt{
+    font-size: 14px;
+    background-color: gainsboro;
+    color: black;
+    height: 80px;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    overflow: auto;
+    opacity: 0.5;
+    line-height: 1.4;
+    -webkit-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+
+}
+.blogInhalt:hover{
+    background-color: rgb(255, 127, 202);
+}
