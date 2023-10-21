@@ -1,5 +1,5 @@
 let postRemark = document.querySelector('.postRemark');
-let remark = 'Hi, you can write and post some comments here. Please try it out! <br><br>You will see a message box, which shows you the comment that you\'ve just post; And you can see all your comments listed in the Comment Board below, with the local time attached to them. <br><br>There are also some default messages in the Comment Board. If you click "Clear local", all comments that you\'ve posted will be removed and only the default messages are left. <br><br> This is because the comment messages are just saved in the localstorage of your computer. I\'m currently learning PHP and mySQL, and later the comments should be saved in a real Database. <br><br>Let\'s see! <br><br> --- a remark from Jing Li';
+let remark = 'Hi, you can write and post some comments here. Please try it out! <br><br>You will see a message box, which shows you the comment that you\'ve just post; And you can see all your comments listed in the Comment Board below, with the local time attached to them. <br><br>There are also some default messages in the Comment Board. If you click "Clear local", all comments that you\'ve posted will be removed and only the default messages are left. <br><br> This is because the comment messages are just saved in the localstorage of your computer. I\'m currently learning PHP and mySQL, and later the comments should be saved in a real Database. <br><br>Let\'s see!';
 let array = remark.split(' ');
 let index = 0;
 function printNextWord () {  
@@ -42,7 +42,7 @@ function updateMessage() {
    
     for(let i=0; i<defaultMessage.length; i++) {
         let date = new Date().toLocaleDateString() + ', ' +new Date().toLocaleTimeString();
-        messageContainer.innerHTML += `<p>${defaultMessage[i]}<br>${date}<br>-------------</p>`;
+        messageContainer.innerHTML += `<p>${defaultMessage[i]}<br>20.10.2023, 20:32:25<br>-------------</p>`;
     }
 }
 

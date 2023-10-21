@@ -73,11 +73,15 @@ border-radius: 6px;
     text-align: center;
 }
 .message{
-    max-height: 1200px;
+    max-height: 1300px;
+    min-height: 550px;
     padding: 10px;
     border: solid 1px  gainsboro;
     border-radius: 6px;
     overflow: auto;
+}
+#redirect{
+    text-align: center;
 }
 footer{
     height: 1000px;

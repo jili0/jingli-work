@@ -13,3 +13,21 @@ body{
     margin-top: 50px;
     font-size: 120%;
 } 
+
+button{
+    color: rgb(255, 127, 202) ;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+button:hover{
+    background-color:  rgb(255, 127, 202) ;
+    color: black;
+}
+#redirect{
+    text-align: center;
+}
