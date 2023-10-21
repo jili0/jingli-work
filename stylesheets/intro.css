@@ -1,0 +1,15 @@
+body{
+    color: gainsboro;
+    background-color: black;
+    font-family: Arial;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+#title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 120%;
+} 
