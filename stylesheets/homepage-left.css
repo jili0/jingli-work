@@ -1,26 +1,4 @@
 
-
-.container{
-  border: solid 1px gainsboro;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-around;
-  min-height: 800px;
-  margin-top: 10px;
-  padding: 10px;
-}
-.item{
-  border: solid 1px gainsboro;
-  border-radius: 6px;
-  padding: 10px;
-}
-.left{
-  width: 20%;
-  height: 900px;
-  overflow-y: auto;
-  font-size: 14px;
-
-}
 .mail{
   color: rgb(255, 127, 202);
   font-size: 14px;
@@ -51,16 +29,3 @@
   overflow: auto;
 }
 
-.middle{
-  width: 50%;
-  margin: 0px 10px;
-}
-
-.right{
-  width: 30%;
-}
-
-
-footer{
-  height: 1000px;
-}
