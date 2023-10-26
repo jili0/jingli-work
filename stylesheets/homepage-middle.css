@@ -40,7 +40,7 @@
 .blogTime{
     text-align: right;
     font-size: 14px;
-    line-height: 0.1;
+    margin: 3px;
 }
 
 .blogInhalt{
