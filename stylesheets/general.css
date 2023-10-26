@@ -7,6 +7,9 @@ body{
     margin: 0px;
   }
   
+  p{
+    margin: 0px;
+  }
 
   .navi button{
     background-color:black;
