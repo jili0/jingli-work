@@ -1,5 +1,9 @@
+.middle{
+    height:900px;
+}
+
 .blogs{
-    max-height: 800px;
+    max-height: 850px;
     overflow: auto;
     display: flex;
     flex-direction: column-reverse;
@@ -26,12 +30,16 @@
 }
 
 .blog{
+    /*
     border: solid 1px gainsboro;
     border-radius: 6px;
     border-style:dashed;
+    */
     margin: 5px;
     padding: 0px 10px;
     height: 180px;
+
+
 
 }
 

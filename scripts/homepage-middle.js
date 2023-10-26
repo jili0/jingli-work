@@ -29,3 +29,13 @@ blogs.forEach((blogs)=>{
 
     `;
 });
+
+
+const backward = document.querySelector('#backward');
+const forward = document.querySelector('#forward');
+backward.addEventListener('click', ()=>{
+    console.log('backward');
+});
+forward.addEventListener('click', ()=>{
+    console.log('forward');
+})

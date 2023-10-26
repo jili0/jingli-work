@@ -1,0 +1,22 @@
+body{
+    font-family: Arial;
+    line-height: 1.2;
+    padding-top: 120px;
+    background-color: black;
+    color:gainsboro;
+  }
+  
+
+  button{
+    background-color:black;
+    color: rgb(255, 127, 202);
+    border-radius: 3px;
+    border:none;
+    padding: 5px;
+    transition: all 0.2s;
+  }
+  button:hover{
+    background-color:rgb(255, 127, 202);
+    color: black;
+    cursor: pointer;
+  }

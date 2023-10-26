@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jing Li</title>
-  <link rel="stylesheet" href="stylesheets/homepage-left.css">
-  <link rel="stylesheet" href="stylesheets/homepage-middle.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Li</title>
+    <link rel="stylesheet" href="stylesheets/general.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/homepage-left.css">
+    <link rel="stylesheet" href="stylesheets/homepage-middle.css">
 
-</head>
-<body>
-    <h1 id="title">Jing Li</h1>
-    <div id="navi">
-      <a href="index.html"><button class="navi-button" title="Homepage">Home</button></a>
-      <a href="intro.html"><button class="navi-button" title="Information about me">Introduction</button></a>
-      <a href="qualifications.html"><button class="navi-button" title="My qualifications">Qualifications</button></a>
-      <a href="projects.html"><button class="navi-button" title="My works">Projects</button></a>
-      <a href="comment.html"><button class="navi-button" title="Leave a comment about the page">Comment</button></a>
-      <a href="contact.html"><button class="navi-button" title="Click here to contact me">Contact</button></a>
-    </div>
+  </head>
+  <!--
+    onload="alert('Hi! This website is not finished yet. For your optimal experience, please view this page using a computer.')"
+  -->
+  <body>
+    <header>
+      <h1 id="title">Jing Li</h1>
+      <nav id="navi">
+        <a href="index.html"><button class="navi-button" title="Homepage">Home</button></a>
+        <a href="intro.html"><button class="navi-button" title="Information about me">Introduction</button></a>
+        <a href="qualifications.html"><button class="navi-button" title="My qualifications">Qualifications</button></a>
+        <a href="projects.html"><button class="navi-button" title="My works">Projects</button></a>
+        <a href="comment.html"><button class="navi-button" title="Leave a comment about the page">Comment</button></a>
+        <a href="contact.html"><button class="navi-button" title="Click here to contact me">Contact</button></a>
+      </nav>      
+    </header>
+
 
     <div class="container">
       <div class="item left">
@@ -33,16 +41,14 @@
             <p>My Blogs</p>
           </div>
 
-    <!--
           <div>
-            <button><</button>
+            <button id="backward"><</button>
             <p id="page">page 1</p>
-            <button>></button>
+            <button id="forward">></button>
             <button>view more blogs</button>
           </div>
 
 
-    -->
         </div>
         <div class="blogs">
           <div class="blog">
@@ -81,9 +87,9 @@ photos
       </div>
     </div>
 
-  <footer></footer>
-  <script src="scripts/homepage-left.js"></script>
-  <script src="scripts/homepage-middle.js"></script>
+    <footer></footer>
+    <script src="scripts/homepage-left.js"></script>
+    <script src="scripts/homepage-middle.js"></script>
 
-</body>
+  </body>
 </html>
