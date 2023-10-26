@@ -1,10 +1,3 @@
-.blogs{
-    max-height: 850px;
-    overflow: auto;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
 .blogHeader{
     display: flex;
     align-items: center;   
@@ -16,7 +9,6 @@
 
 .blogHeaderTitle{
     font-weight: bold;
-
     text-align: left;
     text-decoration: underline;
 }
@@ -26,18 +18,17 @@
     font-size: 14px;    
 }
 
+.blogs{
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 700px;
+}
+
 .blog{
-    /*
-    border: solid 1px gainsboro;
-    border-radius: 6px;
-    border-style:dashed;
-    */
     margin: 5px;
     padding: 0px 10px;
     height: 180px;
-
-
-
 }
 
 .blogTitle{
@@ -54,17 +45,15 @@
 
 .blogInhalt{
     font-size: 14px;
-    background-color: gainsboro;
     color: black;
     height: 80px;
     border: none;
     border-radius: 6px;
     padding: 5px;
     overflow: auto;
-    opacity: 0.5;
+    background-color: rgba(255,255,255,0.1);
     line-height: 1.4;
-    -webkit-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
+    transition: all 2s ease-out;
 
 }
 .blogInhalt:hover{
