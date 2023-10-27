@@ -1,20 +1,39 @@
 .photoContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    row-gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
 }
 
 .photo-date{
-    background-color: pink;
-    text-align: center;
-    border-radius: 4px;
+  background-color: pink;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .photo{
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 4px;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+}
+@media (max-width:900px) {
+  .photoContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:600px) {
+  .photoContainer{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width:300px) {
+  .photo{
+    height: 50px;
+    width: 50px;
+  }
 }
