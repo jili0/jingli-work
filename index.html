@@ -1,97 +1,44 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jing Li</title>
-    <link rel="stylesheet" href="stylesheets/general.css">
-    <link rel="stylesheet" href="stylesheets/header.css">
-    <link rel="stylesheet" href="stylesheets/homepage-container.css">
-    <link rel="stylesheet" href="stylesheets/homepage-left.css">
-    <link rel="stylesheet" href="stylesheets/homepage-middle.css">
-    <link rel="stylesheet" href="stylesheets/homepage-right.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jing Li">
+  <meta name="description" content="Personal Web Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <link rel="icon" href="icons/jl.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,500;0,6..12,700;1,6..12,300;1,6..12,500;1,6..12,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/general.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
 
-
-  </head>
-  <!--
-    onload="alert('Hi!! This website is not finished yet. Please view this page using a computer.')"
-  -->
-  <body>
-    <header>
-      <div class="name">
-        <h1 class="title">Jing Li</h1>
-        <img class="channelPicture" src="photos/channelPicture.jpg">        
-      </div>
-
-      <nav class="navi">
-        <a href="index.html"><button class="navi-button" title="Homepage">Home</button></a>
-        <a href="intro.html"><button class="navi-button" title="Information about me">Introduction</button></a>
-        <a href="qualifications.html"><button class="navi-button" title="My qualifications">Qualifications</button></a>
-        <a href="projects.html"><button class="navi-button" title="My works">Projects</button></a>
-        <a href="comment.html"><button class="navi-button" title="Leave a comment about the page">Comment</button></a>
-        <a href="contact.html"><button class="navi-button" title="Click here to contact me">Contact</button></a>
-      </nav>      
-    </header>
-
-    <div class="container">
-      <div class="item left">
-        <p class="js-postRemark"></p>
-        <p class="js-mail mail"></p>
-      </div>
-
-      <div class="item middle">
-        <div class="blogHeader">
-          <div class="blogHeaderTitle">
-            <p>My Blogs</p>
-          </div>
-
-          <div>
-            <button id="backward"><</button>
-            <p id="page">page 1</p>
-            <button id="forward">></button>
-            <a href="blogs.html"><button>view more blogs</button></a>
-          </div>
-        </div>
-
-        <div class="blogs">
-          <div class="blog">
-          </div>
-        </div>
-      </div>
-
-      <div class="item right">
-        <div class="photoContainer">
-          <div class="photoItem">
-            <img class="photo" src="photos/photoA.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-          <div class="photoItem">
-            <img class="photo" src="photos/photoB.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-          <div class="photoItem">
-            <img class="photo" src="photos/photoC.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-          <div class="photoItem">
-            <img class="photo" src="photos/photoD.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-          <div class="photoItem">
-            <img class="photo" src="photos/photoA.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-          <div class="photoItem">
-            <img class="photo" src="photos/photoA.jpg">
-            <p class="photo-date">25.10.2023</p>
-          </div>
-        </div>
-     
-      </div>
+</head>
+<body>
+  <header class="header">
+    <p class="header__title"><span class="nowrap">Jing Li</span></p>
+    <ul class="header__ul">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="intro.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <img class="header__picture" src="photos/channelPicture.jpg" alt="channel picture">
+    <img class="header__navi" src="icons/navi.ico" alt="navigation">
+  </header>
+  <main class="main">
+    <div class="main__item">
+      <ol class="main__ol">
+        <li>Are you looking for a <span class="nowrap">Web Developer</span>?</li>
+        <li>A team member?</li>
+        <li>Someone who helps you build <span class="nowrap">your own unique website</span>?</li>
+        <li>Yes! You&#39;re here right.</li>
+      </ol>
     </div>
-
-    <footer></footer>
-    <script type="module" src="scripts/script.js"></script>
-
-  </body>
+    <div class="main__item">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam nulla qui illum sed ad, minus dolores fuga iure reprehenderit!</p>
+    </div>
+  </main>
+  <footer class="footer">Copyright &copy; 2023</footer>
+</body>
 </html>

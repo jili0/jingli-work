@@ -1,0 +1,11 @@
+:root {    
+  --BGCOLOR-HERO-ABOUT:LIMEGREEN;
+  --BGCOLOR-HERO-FADE-ABOUT: ORANGE;
+  --BGIMG-HERO-ABOUT: radial-gradient(var(--BGCOLOR-HERO-ABOUT),var(--BGCOLOR-HERO-FADE-ABOUT));
+}
+
+
+.main__item:nth-child(1){
+  background-color: var(--BGCOLOR-HERO-ABOUT);
+  background-image: var(--BGIMG-HERO-ABOUT);
+}

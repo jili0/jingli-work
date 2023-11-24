@@ -1,33 +1,11 @@
-body{
-    color: gainsboro;
-    background-color: black;
-    font-family: Arial;
-    margin: 20px auto;
-    max-width: 800px;
-    line-height: 1.2;
-    padding: 10px;
+:root {    
+  --BGCOLOR-HERO-PROJECT:DODGERBLUE;
+  --BGCOLOR-HERO-FADE-PROJECT: #001f2a;
+  --BGIMG-HERO-PROJECT: radial-gradient(var(--BGCOLOR-HERO-PROJECT),var(--BGCOLOR-HERO-FADE-PROJECT));
 }
 
-#title{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 120%;
-} 
 
-button{
-    color: rgb(255, 127, 202) ;
-    background-color: black;
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-    
-button:hover{
-    background-color:  rgb(255, 127, 202) ;
-    color: black;
-}
-#redirect{
-    text-align: center;
+.main__item:nth-child(1){
+  background-color: var(--BGCOLOR-HERO-PROJECT);
+  background-image: var(--BGIMG-HERO-PROJECT);
 }

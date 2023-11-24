@@ -1,0 +1,12 @@
+:root {
+  --BGCOLOR-HERO-HOMEPAGE:rgb(255, 0, 255);
+  --BGCOLOR-HERO-FADE-HOMEPAGE: #001f2a;
+  --BGIMG-HERO-HOMEPAGE: radial-gradient(var(--BGCOLOR-HERO-HOMEPAGE),var(--BGCOLOR-HERO-FADE-HOMEPAGE));
+
+}
+
+
+.main__item:nth-child(1){
+  background-color: var(--BGCOLOR-HERO-HOMEPAGE);
+  background-image: var(--BGIMG-HERO-HOMEPAGE);
+}
