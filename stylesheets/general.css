@@ -25,10 +25,10 @@ a:any-link {
 
 :root {
     /* FONTS */
-    --FS: 1.2rem;
-    --FS-HEADING: 1.4rem;
-    --FS-NAVI: 0.8rem;
-    --FS-HERO: 1.5rem;
+    --FS: 2.5vh;
+    --FS-HEADING: min(4vw, 35px);
+    --FS-NAVI: min(3vw, 20px);
+    --FS-HERO: 3.5vh;
 
     /* COLORS */
     --BGCOLOR-HEADING: white;
@@ -40,9 +40,10 @@ a:any-link {
 
 
     --BGIMG-BODY: linear-gradient(var(--BGCOLOR-BODY), var( --BGCOLOR-BODY), var(--BGCOLOR-BODY-FADE));
-    --BGIMG-HERO-ABOUT: radial-gradient(var(--BGCOLOR-HERO-ABOUT),var(--BGCOLOR-HERO-FADE-ABOUT));
-    --BGIMG-HERO-PROJECT: radial-gradient(var(--BGCOLOR-HERO-PROJECT),var(--BGCOLOR-HERO-FADE-PROJECT));
-    
+    --BGCOLOR-HERO:DODGERBLUE;
+    --BGCOLOR-HERO-FADE: #001f2a;
+    --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
+      
     
     --FONT-COLOR: whitesmoke;
     --FONT-COLOR-HEADING: black;
@@ -107,7 +108,7 @@ body {
     left: 0px;
     right: 0px;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
 }
 
 /* @keyframes dropTitle {
@@ -125,8 +126,8 @@ body {
 .header__title{
     font-weight: bold;
     font-size: var(--FS-HEADING);
-    letter-spacing: 0.15rem;
-    margin-right: 0.8rem;
+    letter-spacing: 0.5vh;
+    margin-right: 0.5vh;
 }
 
 
@@ -134,11 +135,12 @@ body {
     list-style: none;
     display: flex;
     justify-items: space-evenly;
+    margin-right: 0.5vh;
 }
 
 .header__ul a {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 2vw;
     color: var(--FONT-COLOR-HEADING);
     text-decoration: none;
     font-size: var(--FS-NAVI);
@@ -208,6 +210,8 @@ body {
 }
 
 .main__item:nth-child(1){
+    background-color: var(--BGCOLOR-HERO);
+    background-image: var(--BGIMG-HERO);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,7 +221,7 @@ body {
 
 }
 
-.main__ol {
+.hero__ol {
     text-align: center;
     list-style: none;
     font-weight: bold;
@@ -225,15 +229,16 @@ body {
     margin-bottom: 2rem;
     line-height: 1.5;
     text-transform: uppercase;
+
 }
 
-.main__ol li {
+.hero__ol li {
     text-shadow: -0.5px 1px 1px hsl(39, 65%, 27%);
     font-weight: 700;
     color: whitesmoke;
 }
 
-.main__ol li:last-child {
+.hero__ol li:last-child {
     font-weight: bold;
     color: var(--FONT-COLOR-HIGHLIGHT);
 }

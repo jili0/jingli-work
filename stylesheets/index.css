@@ -1,12 +1,37 @@
-:root {
+/* :root {
   --BGCOLOR-HERO-HOMEPAGE:rgb(255, 0, 255);
   --BGCOLOR-HERO-FADE-HOMEPAGE: #001f2a;
   --BGIMG-HERO-HOMEPAGE: radial-gradient(var(--BGCOLOR-HERO-HOMEPAGE),var(--BGCOLOR-HERO-FADE-HOMEPAGE));
-
 }
 
 
 .main__item:nth-child(1){
   background-color: var(--BGCOLOR-HERO-HOMEPAGE);
   background-image: var(--BGIMG-HERO-HOMEPAGE);
+} */
+
+.header__title {
+  transform: skew(-5deg, 0deg);
+
+}
+
+.hero__img:nth-child(1) {
+  margin-top: 10vh;
+  transform: skew(-20deg, -3deg) translate(-20vh, 0vh);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.hero__img:nth-child(2) {
+  transform: skew(18deg, 18deg) translate(-10vh, 0vh);
+  z-index: 2;
+  opacity: 0.9;
+  border-radius: 2px;
+}
+
+.hero__img:nth-child(3) {
+  transform: skew(-8deg, -8deg) translate(12vh, -6vh) scale(2,2);
+  opacity: 0.5;
+  border-radius: 2px;
+  margin-bottom: 5vh;
 }

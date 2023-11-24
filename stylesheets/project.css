@@ -1,4 +1,4 @@
-:root {    
+/* :root {    
   --BGCOLOR-HERO-PROJECT:DODGERBLUE;
   --BGCOLOR-HERO-FADE-PROJECT: #001f2a;
   --BGIMG-HERO-PROJECT: radial-gradient(var(--BGCOLOR-HERO-PROJECT),var(--BGCOLOR-HERO-FADE-PROJECT));
@@ -8,4 +8,4 @@
 .main__item:nth-child(1){
   background-color: var(--BGCOLOR-HERO-PROJECT);
   background-image: var(--BGIMG-HERO-PROJECT);
-}
+} */

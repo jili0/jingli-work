@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --BGCOLOR-HERO-CONTACT:STEELBLUE;
   --BGCOLOR-HERO-FADE-CONTACT: PURPLE;
   --BGIMG-HERO-CONTACT: radial-gradient(var(--BGCOLOR-HERO-CONTACT),var(--BGCOLOR-HERO-FADE-CONTACT));
@@ -6,7 +6,6 @@
 
 
 .main__item:nth-child(1){
-  background-color: RED;
   background-color: var(--BGCOLOR-HERO-CONTACT);
   background-image: var(--BGIMG-HERO-CONTACT);
-}
+} */
