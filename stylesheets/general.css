@@ -15,9 +15,15 @@ button, input, textarea {
     font: inherit;
 }
 
-a:any-link {
-    color: var(--FONT-COLOR);
+h1 {
+    font-size: var(--FS-H1);
+}
 
+h2 {
+    font-size: var(--FS-H2);
+}
+p {
+    font-size: var(--FS-P);
 }
 
 
@@ -29,8 +35,12 @@ a:any-link {
     --FS-HEADING: min(4vw, 35px);
     --FS-NAVI: min(3vw, 20px);
     --FS-HERO: 3.5vh;
+    --FS-H1: 3.5vh;
+    --FS-H2: 2.8vh;
+    --FS-P: 2.2vh;
 
     /* COLORS */
+    --FONT-COLOR-LIGHT: rgb(207, 220, 231);
     --BGCOLOR-HEADING: white;
     --BGCOLOR-BODY: rgb(253, 249, 249);
     --BGCOLOR-BODY-FADE: #151010;
@@ -75,10 +85,14 @@ a:any-link {
     left: -10000px;
 }
 
-center {
+.center {
     text-align: center;
 }
 
+.lightColor {
+    color: var(--FONT-COLOR-LIGHT);
+}
+  
 
 
 /* || GENERAL STYLES */

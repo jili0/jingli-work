@@ -1,11 +1,51 @@
-/* :root {
-  --BGCOLOR-HERO-CONTACT:STEELBLUE;
-  --BGCOLOR-HERO-FADE-CONTACT: PURPLE;
-  --BGIMG-HERO-CONTACT: radial-gradient(var(--BGCOLOR-HERO-CONTACT),var(--BGCOLOR-HERO-FADE-CONTACT));
+:root {
+  --BGCOLOR-BUTTON:rgb(33, 89, 135);
+  --BGCOLOR-BUTTON-FADE:rgb(7, 60, 101);
+  --COLOR-BUTTON: rgb(245, 239, 245);
+  --BORDER-COLOR-SUBMIT:GRAY;
 }
 
 
-.main__item:nth-child(1){
+/* .main__item:nth-child(1){
   background-color: var(--BGCOLOR-HERO-CONTACT);
   background-image: var(--BGIMG-HERO-CONTACT);
-} */
+}
+ */
+form {
+  width: 80vw;
+  margin-top: 10vh;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+
+input, textarea {
+  border-radius: 4px;
+  padding-inline: 5px;
+  margin-bottom: 4vh;
+  border: 1px solid var(--BORDER-COLOR-SUBMIT);
+}
+
+#submit {
+  width: 10vh;
+  color: var(--COLOR-BUTTON);
+  background-color: var(--BGCOLOR-BUTTON);
+  background-image: radial-gradient(var(--BGCOLOR-BUTTON), var(--BGCOLOR-BUTTON-FADE));
+  padding: 0.5vh;
+}
+
+
+
+.contact__info {
+  margin-bottom: 30vh;
+}
+
+.contact__info h1 {
+  margin-top: 3vh;
+}
+
+.contact__info h2 {
+  margin-top: 1.5vh;
+}
