@@ -35,3 +35,8 @@
   border-radius: 2px;
   margin-bottom: 5vh;
 }
+
+.main__intro {
+  padding-left: 10vh;
+  padding-right: 10vh;
+}

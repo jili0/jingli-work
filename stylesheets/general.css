@@ -34,8 +34,9 @@ a:any-link {
     --BGCOLOR-HEADING: white;
     --BGCOLOR-BODY: rgb(253, 249, 249);
     --BGCOLOR-BODY-FADE: #151010;
-
-
+    --BGCOLOR-FOOTER: rgba(0, 0, 0, 0);
+    --BGCOLOR-FOOTER-FADE: BLACK;
+    --BGIMG-FOOTER: linear-gradient(var( --BGCOLOR-FOOTER), var(--BGCOLOR-FOOTER-FADE));
 
 
 
@@ -45,7 +46,7 @@ a:any-link {
     --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
       
     
-    --FONT-COLOR: whitesmoke;
+    --FONT-COLOR-FOOTER: whitesmoke;
     --FONT-COLOR-HEADING: black;
     --FONT-COLOR-HIGHLIGHT:  hsl(44, 100%, 49%);
     --BORDER-COLOR: rgba(220, 220, 220, 0.535);
@@ -94,6 +95,14 @@ body {
     background-color: var(--BGCOLOR-BODY);
     background-image: var(--BGIMG-BODY);
 }
+
+
+@media screen and (min-width:1024px) {
+    html {
+        margin: 0 15vh 0 15vh;
+    }
+}
+
 
 
 /* || HEADER */
@@ -228,7 +237,6 @@ body {
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    line-height: 1.5;
     text-transform: uppercase;
 
 }
@@ -249,11 +257,14 @@ body {
 }
 
 .footer {
-    background: black;
-    color: whitesmoke;
+    background-image: var(--BGIMG-FOOTER);
+    color: var(--FONT-COLOR-FOOTER);
+    font-size: 2vh;
     display: grid;
     place-content: center;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
 
 }
