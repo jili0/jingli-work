@@ -111,12 +111,6 @@ body {
 }
 
 
-@media screen and (min-width:1024px) {
-    html {
-        margin: 0 15vh 0 15vh;
-    }
-}
-
 
 
 /* || HEADER */
@@ -245,26 +239,6 @@ body {
 
 }
 
-.hero__ol {
-    text-align: center;
-    list-style: none;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-
-}
-
-.hero__ol li {
-    text-shadow: -0.5px 1px 1px hsl(39, 65%, 27%);
-    font-weight: 700;
-    color: whitesmoke;
-}
-
-.hero__ol li:last-child {
-    font-weight: bold;
-    color: var(--FONT-COLOR-HIGHLIGHT);
-}
 
 .main__item:nth-child(2) {
     min-height: 100vh;

@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Jing Li">
-  <meta name="description" content="Personal Web Project">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
-  <link rel="icon" href="icons/jl.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,500;0,6..12,700;1,6..12,300;1,6..12,500;1,6..12,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheets/general.css">
-  <link rel="stylesheet" href="stylesheets/index.css">
-
-</head>
-<body>
-  <header class="header">
-    <p class="header__title"><span class="nowrap">Jing Li</span></p>
-    <ul class="header__ul">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="intro.html">About</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <img class="header__picture" src="photos/channelPicture.jpg" alt="channel picture">
-    <img class="header__navi" src="icons/navi.ico" alt="navigation">
-  </header>
-  <main class="main">
-    <div class="main__item">
-      <img class="hero__img" src="photos/heroA.jpg" alt="Picture of Website" height="100" width="100">
-      <img class="hero__img" src="photos/heroB.jpg" alt="Picture of Website" height="100" width="100">
-      <img class="hero__img" src="photos/heroC.jpg" alt="Picture of Website" height="100" width="100">
-      <ol class="hero__ol">
-        <li>Are you looking for a <span class="nowrap">Web Developer</span>?</li>
-        <li>A team member?</li>
-        <li>Someone who helps you build <span class="nowrap">your own unique website</span>?</li>
-        <li>Yes! You&#39;re here right.</li>
-      </ol>
-      <a href="#main_intro" class="lightColor" id="main__pageLink">Read More</a>
-    </div>
-    <div class="main__item main__intro" id="main_intro">
-      <h1>This website is my portfolio.</h1>
-      <p>I'm Jing. I love programming, and I would like to show you, through this portfolio, all the information about <span class="nowrap">programming and me</span>.</p>
-      <p>If you are an HR, I'd like to show you what my strenths and values are and how I can contribute to your company. You'll find some other projects of mines here, too. If you find the quality good and the ideas new, or if you can give me some criticism or advice, please don't hesitate to contact me! </p>
-      <a href="contact.html">Click to contact me</a>
-      <p>Welcome to my page!</p>
-    </div>
-  </main>
-  <footer class="footer">Copyright &copy; 2023</footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jing Li">
+    <meta name="description" content="Personal Web Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Li</title>
+    <link rel="icon" href="icons/jl.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,500;0,6..12,700;1,6..12,300;1,6..12,500;1,6..12,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/general.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title"><span class="nowrap">Jing Li</span></h1>
+      <ul class="header__ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="intro.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img class="header__picture" src="photos/channelPicture.jpg" alt="channel picture">
+      <img class="header__navi" src="icons/navi.ico" alt="navigation">
+    </header>
+    <hr>
+    <main class="main">
+      <section class="main__item hero">
+        <img class="hero__img" src="photos/heroA.jpg" alt="Picture of Website" height="100" width="100">
+        <img class="hero__img" src="photos/heroB.jpg" alt="Picture of Website" height="100" width="100">
+        <img class="hero__img" src="photos/heroC.jpg" alt="Picture of Website" height="100" width="100">
+        <h2 class="main__heading">Jing's Portfolio</h2>
+        <ul class="hero__ul">
+          <li>Are you looking for a <span class="nowrap">Web Developer</span>?</li>
+          <li>A team member?</li>
+          <li>Someone who helps you build <span class="nowrap">your own unique website</span>?</li>
+          <li>Yes! You&#39;re here right.</li>
+        </ul>
+        <a href="#main_intro" class="lightColor" id="main__pageLink">Read More</a>
+      </section>
+      <hr>
+      <article class="main__item main__intro" id="main_intro">
+        <h2>This website is my portfolio.</h2>
+        <p>I'm Jing. I love programming, and I would like to show you, through this portfolio, all the information about <span class="nowrap">programming and me</span>.</p>
+        <p>If you are an HR, I'd like to show you what my strenths and values are and how I can contribute to your company. You'll find some other projects of mines here, too. If you find the quality good and the ideas new, or if you can give me some criticism or advice, please don't hesitate to contact me! </p>
+        <a href="contact.html">My Contact</a>
+        <p>Welcome to my page!</p>
+      </article>
+    </main>
+    <footer class="footer">Copyright &copy; 2023</footer>
+  </body>
 </html>
