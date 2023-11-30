@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Courier New', Courier, fantasy;
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ h2 {
     font-size: var(--FS-H2);
 }
 p {
-    font-size: var(--FS-P);
+    font-size: var(--FS);
 }
 
 
@@ -31,13 +31,11 @@ p {
 
 :root {
     /* FONTS */
-    --FS: 2.5vh;
+    --FS: 2.3vh;
     --FS-HEADING: min(4vw, 35px);
     --FS-NAVI: min(3vw, 20px);
-    --FS-HERO: 3.5vh;
     --FS-H1: 3.5vh;
-    --FS-H2: 2.8vh;
-    --FS-P: 2.2vh;
+    --FS-H2: 3vh;
 
     /* COLORS */
     --FONT-COLOR-LIGHT: rgb(207, 220, 231);
@@ -51,17 +49,24 @@ p {
 
 
     --BGIMG-BODY: linear-gradient(var(--BGCOLOR-BODY), var( --BGCOLOR-BODY), var(--BGCOLOR-BODY-FADE));
-    --BGCOLOR-HERO:DODGERBLUE;
+/*     --BGCOLOR-HERO:DODGERBLUE;
+    --BGCOLOR-HERO-FADE: #001f2a;
+    --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
+ */      
+    --BGCOLOR-HERO:rgb(255, 0, 255);;
     --BGCOLOR-HERO-FADE: #001f2a;
     --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
       
-    
+    --FONTCOLOR-HERO-INFO: rgb(248, 245, 248);
+
     --FONT-COLOR-FOOTER: whitesmoke;
     --FONT-COLOR-HEADING: black;
     --FONT-COLOR-HIGHLIGHT:  hsl(44, 100%, 49%);
     --BORDER-COLOR: rgba(220, 220, 220, 0.535);
     --BORDER-COLOR-HEADING: purple;
     --OUTLINE-COLOR-HEADING: orange;
+    --BGCOLOR-BUTTON:rgb(124, 79, 124);
+    --BGCOLOR-BUTTON-ACTIVE:hsla(300, 22%, 40%, 0.871);
     --FOOTER: #333;
 
     /* SHADOW */
@@ -110,6 +115,19 @@ body {
     background-image: var(--BGIMG-BODY);
 }
 
+
+.longButton {
+    color: var(--FONTCOLOR-HERO-INFO);
+    border: 1px solid;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    background-color: var(--BGCOLOR-BUTTON);
+}
+      
+      
+.longButton:active, .longButton:focus{
+    background-color: var(--BGCOLOR-BUTTON-ACTIVE);
+}
 
 
 
@@ -230,6 +248,32 @@ body {
     padding: 1rem;
 }
 
+/* to delete later */ 
+
+
+.hero__img:nth-child(1) {
+    margin-top: 10vh;
+    transform: rotate(15deg) skew(-10deg, -10deg) translate(-10vh, 10vh) scale(3,2);
+    border-radius: 2px;
+    opacity: 0.1;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 10vh;
+    transform: rotate(10deg) skew(-20deg, -10deg) translate(-6vh, 0vh) scale(4,3);
+    border-radius: 2px;
+    opacity: 0.2;
+}
+
+.hero__img:nth-child(3) {
+    margin-top: 10vh;
+    transform: rotate(-2deg) skew(8deg, -8deg) translate(0vh, -10vh) scale(6,4);
+    border-radius: 2px;
+    opacity: 0.3;
+}
+/* End: to delete later */ 
+
+
 .main__item:nth-child(1){
     background-color: var(--BGCOLOR-HERO);
     background-image: var(--BGIMG-HERO);
@@ -237,9 +281,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 2rem);
     font-size: var(--FS-HERO);
-
+    min-height: 100vh;
 }
 
 

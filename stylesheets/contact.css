@@ -1,18 +1,58 @@
 :root {
-  --BGCOLOR-BUTTON:rgb(33, 89, 135);
-  --BGCOLOR-BUTTON-FADE:rgb(7, 60, 101);
+
+  --BGCOLOR-HERO-HOMEPAGE:rgb(255, 0, 255);
+  --BGCOLOR-HERO-FADE-HOMEPAGE: #001f2a;
+  --BGIMG-HERO-HOMEPAGE: radial-gradient(var(--BGCOLOR-HERO-HOMEPAGE),var(--BGCOLOR-HERO-FADE-HOMEPAGE));
+
+
   --COLOR-BUTTON: rgb(245, 239, 245);
   --BORDER-COLOR-SUBMIT:GRAY;
 }
 
+/* .imgCoffee {
+    width: 20vh;
+    height: 20vh;
+    background-size: cover;
+    margin: 1rem;
+    border-radius: 5px;
 
-/* .main__item:nth-child(1){
-  background-color: var(--BGCOLOR-HERO-CONTACT);
-  background-image: var(--BGIMG-HERO-CONTACT);
+} */
+
+.hero__imgCoffeeHue {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 10vh;
+  background: rgba(255, 0, 255, 0.136);
+  z-index: 12;
 }
- */
+
+.hero__imgCoffee {
+  background-image: url(/images/contactCoffee.png);
+  width: 20vh;
+  height: 20vh;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10vh;
+  margin-top: 2rem;
+}
+
+
+.hero__text {
+  line-height: 1;
+  font-size: 10rem;
+  text-transform: uppercase;  
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(255, 0, 255, 0.266);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url(/images/photoC.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 form {
-  width: 80vw;
   margin-top: 10vh;
 }
 
@@ -28,13 +68,8 @@ input, textarea {
   border: 1px solid var(--BORDER-COLOR-SUBMIT);
 }
 
-#submit {
-  width: 10vh;
-  color: var(--COLOR-BUTTON);
-  background-color: var(--BGCOLOR-BUTTON);
-  background-image: radial-gradient(var(--BGCOLOR-BUTTON), var(--BGCOLOR-BUTTON-FADE));
-  padding: 0.5vh;
-}
+
+
 
 
 
@@ -48,4 +83,8 @@ input, textarea {
 
 .contact__info h2 {
   margin-top: 1.5vh;
+}
+
+.contact__coffee {
+
 }

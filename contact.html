@@ -23,34 +23,31 @@
       <li><a href="project.html">Project</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <img class="header__picture" src="photos/channelPicture.jpg" alt="channel picture">
+    <img class="header__picture" src="images/channelPicture.jpg" alt="channel picture">
     <img class="header__navi" src="icons/navi.ico" alt="navigation">
   </header>
   <main class="main">
-    <div class="main__item">
-      <ol class="hero__ol">
-        <li>Are you looking for a <span class="nowrap">Web Developer</span>?</li>
-        <li>A team member?</li>
-        <li>Someone who helps you build <span class="nowrap">your own unique website</span>?</li>
-        <li>Yes! You&#39;re here right.</li>
-      </ol>
-    </div>
-    <div class="main__item">
-      <form action="">
-        <label for="name">Your name: </label>
-        <input id="name" type="text" placeholder="enter your name">
-        <label for="message">Your message:</label>
-        <textarea name="message" id="message" rows="10" placeholder="please enter a message"></textarea>
-        <input type="submit" id="submit" value="submit">
-      </form>
-      <div class="contact__info">
-        <h1>Contact</h1>
-        <h2>E-mail</h2>
-        <p>jingli0319@gmail.com</p>
-        <h2>Adress</h2>
-        <p>Stollberger Str. 81</p>
-        <p>12627 Berlin</p>        
+    <section class="main__item" id="hero">
+      <h1 class="center hero__text">Reach me</h1>
+      <div class="hero__imgCoffee">      
+        <div class="hero__imgCoffeeHue"></div>
       </div>
+
+    </section>   
+    <hr>   
+    <form class="main__item" action="" method="get">
+      <label for="name">Your name: </label>
+      <input id="name" type="text" placeholder="enter your name">
+      <label for="message">Your message:</label>
+      <textarea name="message" id="message" rows="10" placeholder="please enter a message"></textarea>
+      <input type="submit" id="submit" class="longButton" value="submit">
+    </form>
+    <section class="contact__info center">
+      <h2>E-mail</h2>
+      <email>jingli0319@gmail.com</email>
+      <h2>Adress</h2>
+      <address>Stollberger Str. 81<br> 12627 Berlin</address>        
+    </section>
 
     </div>
   </main>

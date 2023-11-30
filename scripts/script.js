@@ -13,14 +13,4 @@ function printNextWord () {
   setTimeout(printNextWord, 200); 
 }
 
-function printLink() {
-  let linkSection = document.querySelector('.js-link');
-  let link = '<a href="#main_intro" class="lightColor" id="main__pageLink">Read More</a>';
-  setTimeout(()=>{
-  linkSection.innerHTML += link;
-  },5000);
-
-}
-
 printNextWord();
-printLink();
