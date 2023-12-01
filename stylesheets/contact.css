@@ -1,40 +1,13 @@
 :root {
+  --FONTCOLOR-INPUT:rgb(70, 8, 70);
+  --FONTCOLOR-LEGEND: whitesmoke;
 
-  --BGCOLOR-HERO-HOMEPAGE:rgb(255, 0, 255);
-  --BGCOLOR-HERO-FADE-HOMEPAGE: #001f2a;
-  --BGIMG-HERO-HOMEPAGE: radial-gradient(var(--BGCOLOR-HERO-HOMEPAGE),var(--BGCOLOR-HERO-FADE-HOMEPAGE));
-
-
-  --COLOR-BUTTON: rgb(245, 239, 245);
-  --BORDER-COLOR-SUBMIT:GRAY;
+  --BG-INPUT:rgb(244, 235, 244);
+  --BG-INPUT-FADE:rgb(245, 218, 245);
+  --BG-INPUT-LEGEND:rgb(235, 202, 235);
+  --BG-INPUT-LEGEND-FADE:rgb(152, 123, 152);
 }
 
-/* .imgCoffee {
-    width: 20vh;
-    height: 20vh;
-    background-size: cover;
-    margin: 1rem;
-    border-radius: 5px;
-
-} */
-
-.hero__imgCoffeeHue {
-  width: 20vh;
-  height: 20vh;
-  border-radius: 10vh;
-  background: rgba(255, 0, 255, 0.136);
-  z-index: 12;
-}
-
-.hero__imgCoffee {
-  background-image: url(/images/contactCoffee.png);
-  width: 20vh;
-  height: 20vh;
-  background-size: cover;
-  background-position: bottom;
-  border-radius: 10vh;
-  margin-top: 2rem;
-}
 
 
 .hero__text {
@@ -50,22 +23,60 @@
   background-image: url(/images/photoC.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transform: translateY(-30vh);
+  -webkit-text-stroke: 1px black;
 }
 
-form {
-  margin-top: 10vh;
+.hero__imgCoffeeHue {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 10vh;
+  border: 1px solid;
+  background: rgba(255, 0, 255, 0.136);
+  z-index: 1;
+
 }
 
-label, input, textarea {
-  display: block;
-  width: 100%;
+.hero__imgCoffee {
+  background-image: url(/images/contactCoffee.png);
+  width: 20vh;
+  height: 20vh;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10vh;
+  margin-top: 2rem;
+  transform: translateY(-30vh);
+  border: 1px black;
+
+}
+
+
+fieldset {
+  margin: 1vh;
+  padding: 1rem;
+}
+
+legend {
+  color: var(--FONTCOLOR-LEGEND);
+  font-weight: bold;
+  padding: 1rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 input, textarea {
+  background-color: var(--BG-INPUT);
+  background-image: radial-gradient(var(--BG-INPUT),var(--BG-INPUT-FADE));
+  width: 90%;
   border-radius: 4px;
-  padding-inline: 5px;
-  margin-bottom: 4vh;
+  padding: 2vh;
+  margin-inline: 5%;
   border: 1px solid var(--BORDER-COLOR-SUBMIT);
+}
+
+
+input::placeholder, textarea::placeholder, input, textarea {
+  color: var(--FONTCOLOR-INPUT);
 }
 
 
@@ -75,6 +86,8 @@ input, textarea {
 
 .contact__info {
   margin-bottom: 30vh;
+  column-count: 2;
+
 }
 
 .contact__info h1 {
@@ -83,8 +96,4 @@ input, textarea {
 
 .contact__info h2 {
   margin-top: 1.5vh;
-}
-
-.contact__coffee {
-
 }

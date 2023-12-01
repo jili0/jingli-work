@@ -28,6 +28,9 @@
   </header>
   <main class="main">
     <section class="main__item" id="hero">
+      <img class="hero__img" src="images/heroA.jpg" alt="Picture of Website" height="100" width="100">
+      <img class="hero__img" src="images/heroB.jpg" alt="Picture of Website" height="100" width="100">
+      <img class="hero__img" src="images/heroC.jpg" alt="Picture of Website" height="100" width="100">
       <h1 class="center hero__text">Reach me</h1>
       <div class="hero__imgCoffee">      
         <div class="hero__imgCoffeeHue"></div>
@@ -35,12 +38,16 @@
 
     </section>   
     <hr>   
-    <form class="main__item" action="" method="get">
-      <label for="name">Your name: </label>
-      <input id="name" type="text" placeholder="enter your name">
-      <label for="message">Your message:</label>
-      <textarea name="message" id="message" rows="10" placeholder="please enter a message"></textarea>
-      <input type="submit" id="submit" class="longButton" value="submit">
+    <form class="main__item textBox" action="" method="get">
+      <fieldset class="borderStyle">
+        <legend for="name">Your name: </legend>
+        <input class="borderStyle" id="name" type="text" placeholder="your name">
+      </fieldset>
+      <fieldset class="borderStyle">
+        <legend for="message">Your message:</legend>
+        <textarea class="borderStyle" name="message" id="message" rows="10" cols="100" placeholder="your message"></textarea>
+      </fieldset>
+      <button type="submit" id="submit" class="longButton" value="submit">send</button>
     </form>
     <section class="contact__info center">
       <h2>E-mail</h2>

@@ -6,9 +6,11 @@
   --BGCOLOR-HERO-HEADING-AFTER:rgb(105, 21, 105);
   --BGCOLOR-HERO-HEADING-FADE:fuchsia;
 
-  --FONTCOLOR-HERO-HEADING: rgb(57, 1, 57);
+  --FONTCOLOR-HERO-HEADING: whitesmoke;
+  --FONTCOLOR-HERO-INFO: whitesmoke;
   --FONTCOLOR-HERO-INFO-SHADOW: rgb(82, 6, 82);
-  --BGCOLOR-HERO-HEADING-INFO:rgb(163, 61, 211);
+  --BGCOLOR-HERO-HEADING-INFO:rgb(241, 122, 241);
+  --BGCOLOR-HERO-HEADING-INFO-FADE:rgb(124, 79, 124);
 }
 
 /* || HEADER */
@@ -58,6 +60,7 @@
   box-shadow: 0vh 7vh 2vh  black;
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
+  z-index: 1;
 }
 
 .main__heading::before {
@@ -89,38 +92,5 @@
 .main__heading:active {
   color: red;
   top: 26vh;
-}
-
-
-.hero__info {
-  min-height: 20rem;
-  display: grid;
-  place-content: center;
-  padding: 2rem 2rem;
-  word-spacing: -0.2rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  width: 100%;
-  color: var(--FONTCOLOR-HERO-INFO);
-  z-index: 1;
-  box-shadow: 2px 2px 15px black;
-  background-color: var(--BGCOLOR-HERO-HEADING-INFO);
-  opacity: 0.8;
-  text-shadow: 1px 1px 5px var(--FONTCOLOR-HERO-INFO-SHADOW);
-  background-image: linear-gradient(var(--BGCOLOR-HERO-HEADING-INFO), var(--BGCOLOR-BODY));
-}
-
-
-.main__intro {
-  border: 1px solid #333;
-  border-radius: 0.3rem;
-  box-shadow: 1px 1px 1rem 1px rgba(0, 0, 0, 0.637);
-  margin: 3rem;
-  padding: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: calc(100vh + 5rem);
-  background-color: var(--BGCOLOR-BODY);
 }
 

@@ -53,7 +53,7 @@ p {
     --BGCOLOR-HERO-FADE: #001f2a;
     --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
  */      
-    --BGCOLOR-HERO:rgb(255, 0, 255);;
+    --BGCOLOR-HERO:rgb(255, 0, 255);
     --BGCOLOR-HERO-FADE: #001f2a;
     --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
       
@@ -66,7 +66,9 @@ p {
     --BORDER-COLOR-HEADING: purple;
     --OUTLINE-COLOR-HEADING: orange;
     --BGCOLOR-BUTTON:rgb(124, 79, 124);
+    --BGCOLOR-BUTTON-FADE: rgb(70, 8, 70);
     --BGCOLOR-BUTTON-ACTIVE:hsla(300, 22%, 40%, 0.871);
+    --BGCOLOR-BUTTON-ACTIVE-FADE:hsla(300, 79%, 15%, 0.79);
     --FOOTER: #333;
 
     /* SHADOW */
@@ -115,21 +117,50 @@ body {
     background-image: var(--BGIMG-BODY);
 }
 
+legend {
+    background-color: var(--BGCOLOR-BUTTON);
+    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
+}
 
 .longButton {
+    width: 30vh;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     color: var(--FONTCOLOR-HERO-INFO);
-    border: 1px solid;
+    border: none;
     border-radius: 0.2rem;
     text-decoration: none;
     background-color: var(--BGCOLOR-BUTTON);
+    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
 }
       
       
+.longButton:hover {
+    cursor: pointer;
+}
+
 .longButton:active, .longButton:focus{
-    background-color: var(--BGCOLOR-BUTTON-ACTIVE);
+    background-image: radial-gradient(var(--BGCOLOR-BUTTON-ACTIVE),var(--BGCOLOR-BUTTON-ACTIVE-FADE));
 }
 
+.borderStyle {
+    border: 1px solid #a19f9f;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.129);
 
+}
+
+.textBox {
+    box-shadow: 1px 1px 1rem 1px rgba(0, 0, 0, 0.637);
+    margin: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: calc(100vh + 5rem);
+    background-color: var(--BGCOLOR-BODY);
+  }
 
 /* || HEADER */
 
@@ -245,7 +276,6 @@ body {
     min-width: 3rem;
     display: grid;
     place-content: center;
-    padding: 1rem;
 }
 
 /* to delete later */ 
@@ -282,7 +312,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: var(--FS-HERO);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 
