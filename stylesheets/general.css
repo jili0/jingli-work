@@ -38,8 +38,8 @@ p {
     --FS: 2.3vh;
     --FS-HEADING: min(4vw, 35px);
     --FS-NAVI: min(3vw, 20px);
-    --FS-H1: 3.5vh;
-    --FS-H2: 3vh;
+    --FS-H1: 8vh;
+    --FS-H2: 3.5vh;
 
     /* COLORS */
     --FONT-COLOR-LIGHT: rgb(207, 220, 231);
@@ -87,6 +87,20 @@ p {
 
 
 /* || UTILITIES */
+.bold {
+    font-weight: bold;
+}
+
+.large {
+    font-size: 3.5vh;
+}
+.largePlus {
+    font-size: 4.5vh;
+}
+.medium {
+    font-size: 3vh;
+}
+
 .nowrap {
     white-space: nowrap;
 }
@@ -141,17 +155,19 @@ p {
     background-color: var(--BGCOLOR-BODY);
 }
 
-  .infoBox {
+.infoBox {
     background-color: var(--BGCOLO-INFOBOX);
     background-image: linear-gradient(var(--BGCOLO-INFOBOX), var(--BGCOLOR-INFOBOX-FADE));
     min-height: 30vh;
     display: grid;
     place-content: center;
     color: var(--FONT-COLOR-LIGHT);
-    
-
 }
 
+
+.relative {
+    position: relative;
+}
 /* || GENERAL STYLES */
 
 html {
