@@ -29,20 +29,31 @@
   width: 80vh;
   height: 60vh;
   border-radius: 5px;
-  opacity: 0.8;
+  opacity: 0.9;
+  border-radius: 15px;
+  outline: 25px double dodgerblue;
+  outline-offset: -50px;
+  border: 15px double slateblue;
+  border-radius: 15px;
 }
 
 .imgA {
-}
-
-
-.imgB {
-  transition: all 3s;
+  opacity: 0.8;
 }
 
 .imgB:hover{
   opacity: 0;
-  transition: all 3s;
+  transition: all 2s;
+}
+
+.imgB {
+  transition: all 2s;
+
+}
+
+.imgB:hover{
+  opacity: 0;
+  transition: all 2s;
 }
 
 /* 

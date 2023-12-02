@@ -161,6 +161,8 @@ p {
     min-height: 30vh;
     display: grid;
     place-content: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
     color: var(--FONT-COLOR-LIGHT);
 }
 
