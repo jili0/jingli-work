@@ -8,7 +8,11 @@
 }
 
 body{
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-inline: auto;
+    max-width: 1200px;
+
 }
 
 button, input, textarea {
@@ -49,10 +53,10 @@ p {
 
 
     --BGIMG-BODY: linear-gradient(var(--BGCOLOR-BODY), var( --BGCOLOR-BODY), var(--BGCOLOR-BODY-FADE));
-/*     --BGCOLOR-HERO:DODGERBLUE;
-    --BGCOLOR-HERO-FADE: #001f2a;
-    --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
- */      
+    --BGCOLO-INFOBOX:rgb(132, 18, 155);
+    --BGCOLOR-INFOBOX-FADE: #001f2a;
+    --BGIMG-INFOBOX: radial-gradient(var(--BGCOLOR-INFOBOX),var(--BGCOLOR-INFOBOX-FA));
+      
     --BGCOLOR-HERO:rgb(255, 0, 255);
     --BGCOLOR-HERO-FADE: #001f2a;
     --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
@@ -96,31 +100,6 @@ p {
     text-align: center;
 }
 
-.lightColor {
-    color: var(--FONT-COLOR-LIGHT);
-}
-  
-
-
-/* || GENERAL STYLES */
-
-html {
-    scroll-behavior: smooth;
-    font-size: var(--FS);
-    line-height: 1.5;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--BGCOLOR-BODY);
-    background-image: var(--BGIMG-BODY);
-}
-
-legend {
-    background-color: var(--BGCOLOR-BUTTON);
-    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
-}
 
 .longButton {
     width: 30vh;
@@ -158,9 +137,40 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: calc(100vh + 5rem);
+    min-height: calc(90vh + 5rem);
     background-color: var(--BGCOLOR-BODY);
-  }
+}
+
+  .infoBox {
+    background-color: var(--BGCOLO-INFOBOX);
+    background-image: linear-gradient(var(--BGCOLO-INFOBOX), var(--BGCOLOR-INFOBOX-FADE));
+    min-height: 30vh;
+    display: grid;
+    place-content: center;
+    color: var(--FONT-COLOR-LIGHT);
+    
+
+}
+
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BGCOLOR-BODY);
+    background-image: var(--BGIMG-BODY);
+}
+
+legend {
+    background-color: var(--BGCOLOR-BUTTON);
+    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
+}
 
 /* || HEADER */
 

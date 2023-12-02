@@ -94,3 +94,22 @@
   top: 26vh;
 }
 
+
+.hero__info {
+  min-height: 10rem;
+  display: grid;
+  place-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 1;
+  box-shadow: 2px 2px 15px black;
+  background-color: var(--BGCOLOR-HERO-HEADING-INFO);
+  opacity: 0.8;
+  text-shadow: -0.5px 1px 1px hsl(39, 65%, 27%);
+  font-weight: 700;
+  font-size: 3vh;
+  color: whitesmoke;
+}
