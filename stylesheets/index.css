@@ -96,7 +96,7 @@
 
 
 .hero__info {
-  min-height: 10rem;
+  min-height: 12rem;
   display: grid;
   place-content: center;
   margin-top: 1.5rem;
