@@ -9,3 +9,47 @@
   background-color: var(--BGCOLOR-HERO-PROJECT);
   background-image: var(--BGIMG-HERO-PROJECT);
 } */
+
+#projectsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  gap: vh;
+}
+
+.myProjects {
+  height: 35vh;
+  width: auto;
+  margin: 2vh;
+  display: grid;
+  place-content: center;
+  border: 5px solid rgba(245, 245, 245, 0.185);
+  border-radius: 15px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 10px 10px 20px black;
+  transition: all 0.15s;
+}
+
+.myProjects:nth-child(1) {
+  background-color: rgb(174, 123, 232);
+  background-image: linear-gradient(rgb(146, 70, 232),rgb(174, 123, 232));
+}
+.myProjects:nth-child(2) {
+  background-color: rgb(123, 123, 232);
+  background-image: linear-gradient(rgb(75, 75, 231),rgb(123, 123, 232));
+}
+.myProjects:nth-child(3) {
+  background-color: rgb(123, 185, 232);
+  background-image: linear-gradient(rgb(74, 161, 228),rgb(123, 185, 232));
+}
+.myProjects:nth-child(4) {
+  background-color: rgb(123, 225, 232);
+  background-image: linear-gradient(rgb(75, 222, 233),rgb(123, 225, 232));
+}
+
+.myProjects:hover{
+  transform: translateY(-1vh);
+  transition: all 0.15s;
+}
