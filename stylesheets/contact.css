@@ -5,17 +5,17 @@ fieldset {
 }
 
 legend {
-  color: var(--FONTCOLOR-LEGEND);
-  font-weight: bold;
-  padding: 1rem;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  color:#333;
+  font-family: 'Cinzel';
+  padding: 0.5rem;
+  border-top-left-radius: 1.2rem;
+  border: 1px solid rgba(116, 134, 110, 0.279);
 }
 
 input, textarea {
-  background-color: var(--BG-INPUT);
-  background-image: radial-gradient(var(--BG-INPUT),var(--BG-INPUT-FADE));
+  background-color: rgba(204, 193, 146, 0.272);
   width: 90%;
+  
   border-radius: 4px;
   padding: 2vh;
   margin-inline: 5%;

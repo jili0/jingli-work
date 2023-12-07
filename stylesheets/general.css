@@ -116,11 +116,15 @@ html {
 body {
     background-color: var(--BGCOLOR-BODY);
     font-size: var(--FS-BODY);
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 h2 {
     font-family: var(--FF-CINZEL);
     font-size: var(--FS-TITLE);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 main {
@@ -280,15 +284,13 @@ summary {
     place-content: center;
 }
 
-
-.hero {
-    background-image: var(--BGIMG-HERO-BACKUP);
-}
-
 .hero__image {
     height: 100vh;
     width: 100vw;
+    max-width: 1200px;
+    overflow: hidden;
     object-fit: cover;
+    background-image: var(--BGIMG-HERO-BACKUP);
 }
 
 .main__tip {

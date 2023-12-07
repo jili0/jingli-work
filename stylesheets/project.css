@@ -3,47 +3,46 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
-  gap: vh;
+  padding: 3vh;
+  gap: 3vh;
+}
+
+@media screen and (max-width: 600px) {
+  #projectsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #projectsContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
 }
 
 .myProjects {
   height: 20vh;
   width: auto;
   margin: 2vh;
+  padding: 2vh;
   display: grid;
   place-content: center;
-  border: 5px solid rgba(245, 245, 245, 0.185);
-  border-radius: 15px;
+  border: 1px solid rgba(245, 245, 245, 0.185);
+  border-radius: 0.2rem;
+  border-top-left-radius: 1.2rem;
   color: #333;
-  font-size: 1.2rem;
-  font-weight: 600;
-  box-shadow: 10px 10px 20px black;
+  font-family: 'Cinzel';
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.387);
   transition: all 0.15s;
+  background-color: whitesmoke;
 }
 
-#myProject1 {
-  background-color: rgb(174, 123, 232);
-  background-image: linear-gradient(rgb(146, 70, 232),rgb(174, 123, 232));
-}
-
-#myProject2 {
-  background-color: rgb(123, 123, 232);
-  background-image: linear-gradient(rgb(75, 75, 231),rgb(123, 123, 232));
-}
-
-#myProject3 {
-  background-color: rgb(123, 185, 232);
-  background-image: linear-gradient(rgb(74, 161, 228),rgb(123, 185, 232));
-}
-#myProject4 {
-  background-color: rgb(123, 225, 232);
-  background-image: linear-gradient(rgb(75, 222, 233),rgb(144, 219, 224));
-}
 
 .myProjects:hover, .myProjects:focus {
   transform: translateY(-1vh);
   transition: all 0.15s;
 }
+
 .myProjects:active{
   transform: translateY(0vh);
   opacity: 0.8;
@@ -51,12 +50,12 @@
 }
 
 .projectSection {
-  background-color: rgba(137, 43, 226, 0.25);
-  margin: 1vh;
+  background-color: rgba(202, 218, 166, 0.295);
   border: 1px solid whitesmoke;
-  border-radius: 1rem;
+  border-radius: 0.1rem;
   padding: 0.3rem;
 }
+
 .ratingSection {
   display: flex;
   justify-content: space-around;
@@ -66,11 +65,10 @@
 .ratingContainer {
   display: flex;
   flex-direction: column;
-
 }
 
 .ratingTitle {
-  color: whitesmoke;
+  color: #333;
 }
 
 .ratingAdd {
@@ -78,10 +76,7 @@
 } 
 
 .ratingAdd:hover {
+  cursor: pointer;
   opacity: 0.8;
   transition: all 0.15s;
-}
-
-.ratingAdd {
-
 }

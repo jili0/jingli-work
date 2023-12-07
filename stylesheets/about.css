@@ -1,20 +1,17 @@
 
-
-
 .detailList {
   list-style: none;
-  width: 100%;
   display: block;
   margin-top: 4vh;
   margin-bottom: 10vh;
-  margin-inline: 2px;
-  border: 3px solid rgb(201, 140, 225);
+  margin-inline: 3vh;
+  border: 3px solid rgba(100, 137, 78, 0.722);
   border-radius: 10px;
 }
 
 .detailListItem {
   border-bottom: 1px solid rgb(193, 191, 191);
-  background-color: var(--BG-LISTITEM-ODD);
+  background-color:rgba(100, 137, 78, 0.3);
 }
 
 .detailListItem:hover {
@@ -23,13 +20,18 @@
 }
 
 .detailListItem:nth-child(even) {
-  background-color: var(--BG-LISTITEM-EVEN);
+  background-color: rgba(100, 137, 78, 0.1);
 }
 
 details {
-  font-size: 3.5vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem;
+}
+
+details p {
+  text-align: justify;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  letter-spacing: -1px;
 }
 
 
