@@ -1,17 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&display=swap');
+
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FS-HEADING: min(4vw, 35px);
+    --FS-TITLE: min(4vw, 35px);
+    --FS-NAVI: min(3vw, 20px);
+    --FS-BODY: min(3vw, 20px);
+    --FF-CINZEL:'Cinzel Decorative', 'Cinzel', serif;
+
+
+    /* COLORS */
+    --BGCOLOR-HEADING: white;
+    --BGCOLOR-BODY: rgba(243, 242, 239, 0.594);
+    --BGCOLOR-TABLE-HEAD: rgba(76, 94, 76, 0.929);
+    --BGCOLOR-TABLE-FOOT: rgba(76, 94, 76, 0.138);
+    --BGCOLOR-TABLE-CELL: whitesmoke;
+    --BGIMG-TABLE: linear-gradient(rgba(76, 94, 76, 0.929),rgba(76, 94, 76, 0.138));
+    --BGIMG-BUTTON: radial-gradient(rgba(77, 103, 75, 0), rgba(116, 150, 116, 0.155));
+    --BGIMG-LEGEND: linear-gradient(whitesmoke, rgb(207, 236, 177));
+    --BGIMG-TIP: linear-gradient(rgba(131, 183, 131, 0.855), rgba(131, 183, 131, 0.634),rgba(131, 183, 131, 0.855));
+    --BGIMG-FOOTER: linear-gradient( rgb(52, 125, 23), rgb(25, 71, 7));
+    --BGIMG-HERO-BACKUP: linear-gradient( rgb(207, 236, 177), whitesmoke);
+    --FONT-COLOR-THEAD: whitesmoke;
+    --FONT-COLOR-FOOTER: whitesmoke;
+    --FONT-COLOR-HEADING: #333;
+    --FONT-COLOR-TIP: #184a16;
+
+    /* BORDERS AND OUTLINES */
+    --SHADOW-HEADING-BORDER:1px 1px 10px rgba(233, 227, 227, 0.589);
+    --HR-BORDER: 3px dashed rgba(233, 227, 227, 0.994);
+    --BORDER-TABLE: 1px solid rgba(154, 174, 152, 0.376);
+    --BORDER-BUTTON: 1px solid rgba(154, 174, 152, 0.376);
+    --SHADOW-BUTTON-BORDER:1px 1px 3px rgba(149, 169, 147, 0.163);
+    --SHADOW-TEXTBOX-BORDER:1px 1px 5px 1px rgba(0, 0, 0, 0.153);
+    --BORDER-HEADER-PICTURE: 0.4rem double  hsl(97, 68%, 26%);
+    --BORDER-HEADER-PICTURE-ANIMATION: 0.5rem dashed hsl(102, 49%, 46%);
+    --OUTLINE-HEADER-PICTURE: 0.1rem solid hsl(116, 45%, 56%);
+}
+
+
 /* || RESET  */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, fantasy;
+    font-family: 'Courier New', Courier;
     box-sizing: border-box;
+    line-height: 1.4;
 }
 
-body{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-inline: auto;
-    max-width: 1200px;
+hr {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border: var(--HR-BORDER);
 }
 
 a:any-link {
@@ -19,99 +63,32 @@ a:any-link {
     color: #333;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 button, input, textarea {
     font: inherit;
 }
 
-h1 {
-    font-size: var(--FS-H1);
+.button {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border: var(--BORDER-BUTTON);
+    box-shadow:var(--SHADOW-BUTTON-BORDER);
+    border-radius: 0.2rem;
+    background-image: var(--BGIMG-BUTTON);
 }
-
-h2 {
-    font-size: var(--FS-H2);
-}
-p {
-    font-size: var(--FS);
-}
-
-
-/* || VARIABLES */
-
-:root {
-    /* FONTS */
-    --FS: 2.3vh;
-    --FS-HEADING: min(4vw, 35px);
-    --FS-NAVI: min(3vw, 20px);
-    --FS-H1: 8vh;
-    --FS-H2: 3.5vh;
-
-    /* COLORS */
-    --FONT-COLOR-LIGHT: rgb(207, 220, 231);
-    --BGCOLOR-HEADING: white;
-    --BGCOLOR-BODY: rgb(253, 249, 249);
-    --BGCOLOR-BODY-FADE: #151010;
-    --BGCOLOR-FOOTER: rgba(0, 0, 0, 0);
-    --BGCOLOR-FOOTER-FADE: BLACK;
-    --BGIMG-FOOTER: linear-gradient(var( --BGCOLOR-FOOTER), var(--BGCOLOR-FOOTER-FADE));
-
-
-
-    --BGIMG-BODY: linear-gradient(var(--BGCOLOR-BODY), var( --BGCOLOR-BODY), var(--BGCOLOR-BODY-FADE));
-    --BGCOLO-INFOBOX:rgb(132, 18, 155);
-    --BGCOLOR-INFOBOX-FADE: #001f2a;
-    --BGIMG-INFOBOX: radial-gradient(var(--BGCOLOR-INFOBOX),var(--BGCOLOR-INFOBOX-FA));
       
-    --BGCOLOR-HERO:rgb(255, 0, 255);
-    --BGCOLOR-HERO-FADE: #001f2a;
-    --BGIMG-HERO: radial-gradient(var(--BGCOLOR-HERO),var(--BGCOLOR-HERO-FADE));
-      
-    --FONTCOLOR-HERO-INFO: rgb(248, 245, 248);
 
-    --FONT-COLOR-FOOTER: whitesmoke;
-    --FONT-COLOR-HEADING: black;
-    --FONT-COLOR-HIGHLIGHT:  hsl(44, 100%, 49%);
-    --BORDER-COLOR: rgba(220, 220, 220, 0.535);
-    --BORDER-COLOR-HEADING: purple;
-    --OUTLINE-COLOR-HEADING: orange;
-    --BGCOLOR-BUTTON:rgb(124, 79, 124);
-    --BGCOLOR-BUTTON-FADE: rgb(70, 8, 70);
-    --BGCOLOR-BUTTON-ACTIVE:hsla(300, 22%, 40%, 0.871);
-    --BGCOLOR-BUTTON-ACTIVE-FADE:hsla(300, 79%, 15%, 0.79);
-    --FOOTER: #333;
-
-    /* SHADOW */
-    --SHADOW:1px 1px 10px rgba(233, 227, 227, 0.589);
-
-    /* BORDERS AND OUTLINES */
-    --BORDER-HEADER-PICTURE: 0.1rem double var(--BORDER-COLOR-HEADING);
-    --BORDER-HEADER-PICTURE-ANIMATION: 0.5rem dashed hsl(44, 100%, 49%);
-    --OUTLINE-HEADER-PICTURE: 0.1rem solid var(--OUTLINE-COLOR-HEADING) ;
+.button:active, .button:focus{
+    opacity: 0.8;
 }
-
-
 
 /* || UTILITIES */
-.bold {
-    font-weight: bold;
-}
-
-.large {
-    font-size: 3.5vh;
-}
-.largePlus {
-    font-size: 4.5vh;
-}
-.medium {
-    font-size: 3vh;
-}
 
 .nowrap {
     white-space: nowrap;
-}
-
-.offscrenn {
-    position: absolute;
-    left: -10000px;
 }
 
 .center {
@@ -119,81 +96,94 @@ p {
 }
 
 
-.longButton {
-    width: 30vh;
-    margin: auto;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    color: var(--FONTCOLOR-HERO-INFO);
-    border: none;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    background-color: var(--BGCOLOR-BUTTON);
-    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
-}
-      
-      
-.longButton:hover {
-    cursor: pointer;
-}
-
-.longButton:active, .longButton:focus{
-    background-image: radial-gradient(var(--BGCOLOR-BUTTON-ACTIVE),var(--BGCOLOR-BUTTON-ACTIVE-FADE));
-}
-
-.borderStyle {
-    border: 1px solid #a19f9f;
-    border-radius: 0.3rem;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.129);
-
-}
-
 .textBox {
-    box-shadow: 1px 1px 1rem 1px rgba(0, 0, 0, 0.637);
+    box-shadow: var(--SHADOW-TEXTBOX-BORDER);
     margin: 3rem;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: calc(90vh + 5rem);
+    min-height: calc(50vh + 5rem);
     background-color: var(--BGCOLOR-BODY);
 }
 
-.infoBox {
-    background-color: var(--BGCOLO-INFOBOX);
-    background-image: linear-gradient(var(--BGCOLO-INFOBOX), var(--BGCOLOR-INFOBOX-FADE));
-    min-height: 30vh;
-    display: grid;
-    place-content: center;
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-    color: var(--FONT-COLOR-LIGHT);
-}
-
-
-.relative {
-    position: relative;
-}
 /* || GENERAL STYLES */
 
 html {
     scroll-behavior: smooth;
-    font-size: var(--FS);
-    line-height: 1.5;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     background-color: var(--BGCOLOR-BODY);
-    background-image: var(--BGIMG-BODY);
+    font-size: var(--FS-BODY);
+}
+
+h2 {
+    font-family: var(--FF-CINZEL);
+    font-size: var(--FS-TITLE);
+}
+
+main {
+    padding-bottom: 30vh;
 }
 
 legend {
-    background-color: var(--BGCOLOR-BUTTON);
-    background-image: radial-gradient(var(--BGCOLOR-BUTTON),var(--BGCOLOR-BUTTON-FADE));
+    background-image: var(--BGIMG-LEGEND);
 }
 
+
+table {
+    margin: 3vh;
+}
+
+table caption{
+    font-family: var(--FF-CINZEL);
+    margin: 3vh;
+}
+
+thead, tbody, tfoot{
+    padding: 1vh;
+}
+
+thead {
+    background-color: var(--BGCOLOR-TABLE-HEAD);
+    margin-bottom: 0.5vh;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+thead tr {
+    display: grid;
+    place-content: center;
+    color: var(--FONT-COLOR-THEAD);
+}
+
+tfoot tr {
+    text-align: center;
+}
+
+tfoot{
+    background-color: var(--BGCOLOR-TABLE-FOOT);
+    margin-top: 0.5vh;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+tbody {
+    background-image: var(--BGIMG-TABLE);
+}
+
+tbody td {
+    border: var(--BORDER-TABLE);
+    border-collapse: collapse;
+    background-color: var(--BGCOLOR-TABLE-CELL);
+    padding: 1vh;
+    border-top-left-radius: 0.5rem;
+}
+
+summary {
+    font-family: 'cinzel';
+}
 /* || HEADER */
 
 .header {
@@ -202,7 +192,7 @@ legend {
     background-color: var(--BGCOLOR-HEADING);
     padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--BORDER-COLOR);
-    box-shadow: var(--SHADOW);
+    box-shadow: var(--SHADOW-HEADING-BORDER);
     position: fixed;
     left: 0px;
     right: 0px;
@@ -210,42 +200,27 @@ legend {
     z-index: 100;
 }
 
-/* @keyframes dropTitle {
-    0% {
-
-    }
-    0% {
-        
-    }
-    0% {
-        
-    }
-} */
 
 .header__title{
     font-weight: bold;
     font-size: var(--FS-HEADING);
     letter-spacing: 0.5vh;
     margin-right: 0.5vh;
+    font-family: var(--FF-CINZEL);
 }
 
 
 .header__ul {
     list-style: none;
     display: flex;
-    justify-items: space-evenly;
-    margin-right: 0.5vh;
 }
 
 .header__ul a {
-    display: inline-block;
     margin-right: 2vw;
-    color: var(--FONT-COLOR-HEADING);
-    text-decoration: none;
     font-size: var(--FS-NAVI);
 }
 
-.header__ul a:hover, li:focus {
+.header__ul a:hover {
     text-decoration: underline;
 }
 
@@ -256,7 +231,7 @@ legend {
     border: var(--BORDER-HEADER-PICTURE);
     outline: var(--OUTLINE-HEADER-PICTURE);
     outline-offset: 0.05rem;
-    transition: all 0.2s;
+    transition: rotatePicture 2s;
 }
 
 
@@ -264,14 +239,13 @@ legend {
     0%{
        transform: rotate(0deg); 
     }
-    30%{
-        transform: rotate(30deg); 
-     }    
+
     50%{
-        transform: rotate(-30deg); 
-     }    
+        opacity: 0.3;
+     }
+
     100%{
-        transform: rotate(0deg); 
+        transform: rotate(360deg); 
      }
 }
 
@@ -280,87 +254,59 @@ legend {
     border: var(--BORDER-HEADER-PICTURE-ANIMATION);
     transition: all 0.2s;
     animation-name: rotatePicture;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
 }
 
 
 .header__navi{
-    height: 1.2rem;
-    width: 1.6rem;
+    height: 1.4rem;
+    width: 1.4rem;
     margin-left: 1rem;
+    opacity: 0.8;
 }
 
 .header__navi:hover, .header__navi:focus {
     cursor: pointer;
+    opacity: 1;
 }
 
-.main {
-    min-height: 100vh;
-    padding-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-}
+/* || MAIN */
+
 
 .main__item {
-    min-width: 3rem;
     display: grid;
     place-content: center;
 }
 
-/* to delete later */ 
 
-
-.hero__img:nth-child(1) {
-    margin-top: 10vh;
-    transform: rotate(15deg) skew(-10deg, -10deg) translate(-10vh, 10vh) scale(3,2);
-    border-radius: 2px;
-    opacity: 0.1;
+.hero {
+    background-image: var(--BGIMG-HERO-BACKUP);
 }
 
-.hero__img:nth-child(2) {
-    margin-top: 10vh;
-    transform: rotate(10deg) skew(-20deg, -10deg) translate(-6vh, 0vh) scale(4,3);
-    border-radius: 2px;
-    opacity: 0.2;
-}
-
-.hero__img:nth-child(3) {
-    margin-top: 10vh;
-    transform: rotate(-2deg) skew(8deg, -8deg) translate(0vh, -10vh) scale(6,4);
-    border-radius: 2px;
-    opacity: 0.3;
-}
-/* End: to delete later */ 
-
-
-.main__item:nth-child(1){
-    background-color: var(--BGCOLOR-HERO);
-    background-image: var(--BGIMG-HERO);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--FS-HERO);
+.hero__image {
     height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
 
+.main__tip {
+    background-image: var(--BGIMG-TIP);
+    min-height: 30vh;
+}
 
-.main__item:nth-child(2) {
-    min-height: 100vh;
+.main__tip p {
+    color: var(--FONT-COLOR-TIP);
 }
 
 .footer {
     background-image: var(--BGIMG-FOOTER);
     color: var(--FONT-COLOR-FOOTER);
-    font-size: 2vh;
     display: grid;
     place-content: center;
     position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
-
 }
