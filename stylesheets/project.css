@@ -18,7 +18,7 @@
 }
 
 .myProjects {
-  height: 35vh;
+  height: 20vh;
   width: auto;
   margin: 2vh;
   display: grid;
@@ -32,24 +32,67 @@
   transition: all 0.15s;
 }
 
-.myProjects:nth-child(1) {
+#myProject1 {
   background-color: rgb(174, 123, 232);
   background-image: linear-gradient(rgb(146, 70, 232),rgb(174, 123, 232));
 }
-.myProjects:nth-child(2) {
+
+#myProject2 {
   background-color: rgb(123, 123, 232);
   background-image: linear-gradient(rgb(75, 75, 231),rgb(123, 123, 232));
 }
-.myProjects:nth-child(3) {
+
+#myProject3 {
   background-color: rgb(123, 185, 232);
   background-image: linear-gradient(rgb(74, 161, 228),rgb(123, 185, 232));
 }
-.myProjects:nth-child(4) {
+#myProject4 {
   background-color: rgb(123, 225, 232);
-  background-image: linear-gradient(rgb(75, 222, 233),rgb(123, 225, 232));
+  background-image: linear-gradient(rgb(75, 222, 233),rgb(144, 219, 224));
 }
 
-.myProjects:hover{
+.myProjects:hover, .myProjects:focus {
   transform: translateY(-1vh);
   transition: all 0.15s;
+}
+.myProjects:active{
+  transform: translateY(0vh);
+  opacity: 0.8;
+  transition: all 0.15s;
+}
+
+.projectSection {
+  background-color: rgba(137, 43, 226, 0.25);
+  margin: 1vh;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+.ratingSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ratingTitle {
+  color: whitesmoke;
+}
+
+.ratingAdd {
+  transition: all 0.15s;
+} 
+
+.ratingAdd:hover {
+  opacity: 0.8;
+  transition: all 0.15s;
+}
+
+.ratingAdd {
+
 }

@@ -12,7 +12,11 @@ body{
     margin-bottom: 0px;
     margin-inline: auto;
     max-width: 1200px;
+}
 
+a:any-link {
+    text-decoration: none;
+    color: #333;
 }
 
 button, input, textarea {
