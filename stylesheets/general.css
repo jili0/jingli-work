@@ -7,6 +7,7 @@
     /* FONTS */
     --FS-HEADING: min(4vw, 35px);
     --FS-TITLE: min(4vw, 35px);
+    --FS-H2: min(3vw, 25px);
     --FS-NAVI: min(3vw, 20px);
     --FS-BODY: min(3vw, 20px);
     --FF-CINZEL:'Cinzel Decorative', 'Cinzel', serif;
@@ -20,8 +21,8 @@
     --BGCOLOR-TABLE-CELL: whitesmoke;
     --BGIMG-TABLE: linear-gradient(rgba(76, 94, 76, 0.929),rgba(76, 94, 76, 0.138));
     --BGIMG-BUTTON: radial-gradient(rgba(77, 103, 75, 0), rgba(116, 150, 116, 0.155));
-    --BGIMG-LEGEND: linear-gradient(whitesmoke, rgb(207, 236, 177));
-    --BGIMG-TIP: linear-gradient(rgba(131, 183, 131, 0.855), rgba(131, 183, 131, 0.634),rgba(131, 183, 131, 0.855));
+    --BGIMG-LEGEND: linear-gradient(rgba(92, 149, 102, 0.094), rgba(87, 119, 92, 0.361));
+    --BGIMG-TIP: linear-gradient(rgba(86, 120, 86, 0.603), rgba(72, 128, 72, 0.422),rgba(57, 81, 57, 0.195));
     --BGIMG-FOOTER: linear-gradient( rgb(52, 125, 23), rgb(25, 71, 7));
     --BGIMG-HERO-BACKUP: linear-gradient( rgb(207, 236, 177), whitesmoke);
     --FONT-COLOR-THEAD: whitesmoke;
@@ -72,8 +73,11 @@ button, input, textarea {
 }
 
 .button {
-    margin: 0.2rem;
-    padding: 0.2rem;
+    display: inline-block;
+    width: fit-content;
+    min-width: 10vh;
+    margin: 0.2rem auto;
+    padding: 0.2rem 0.4rem;
     border: var(--BORDER-BUTTON);
     box-shadow:var(--SHADOW-BUTTON-BORDER);
     border-radius: 0.2rem;
@@ -95,16 +99,19 @@ button, input, textarea {
     text-align: center;
 }
 
-
 .textBox {
     box-shadow: var(--SHADOW-TEXTBOX-BORDER);
     margin: 3rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     min-height: calc(50vh + 5rem);
     background-color: var(--BGCOLOR-BODY);
+}
+
+.avoidBreakInside {
+    break-inside: avoid;
 }
 
 /* || GENERAL STYLES */
@@ -122,9 +129,9 @@ body {
 
 h2 {
     font-family: var(--FF-CINZEL);
-    font-size: var(--FS-TITLE);
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    font-size: var(--FS-H2);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 main {
@@ -138,6 +145,7 @@ legend {
 
 table {
     margin: 3vh;
+    table-layout: fixed;
 }
 
 table caption{
@@ -177,7 +185,9 @@ tbody {
     background-image: var(--BGIMG-TABLE);
 }
 
-tbody td {
+tbody .td {
+    width: 100%;
+    min-width: 25vh;
     border: var(--BORDER-TABLE);
     border-collapse: collapse;
     background-color: var(--BGCOLOR-TABLE-CELL);

@@ -49,6 +49,10 @@
   transition: all 0.15s;
 }
 
+.projectSectionTitle {
+  background-color: rgb(60, 168, 62);
+}
+
 .projectSection {
   background-color: rgba(202, 218, 166, 0.295);
   border: 1px solid whitesmoke;
