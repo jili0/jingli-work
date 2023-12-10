@@ -1,17 +1,12 @@
-/* let index = 0;
-let info = "Are you looking for a Web Developer?<br> A team member? <br>Someone who helps you build your own unique website? <br>Yes! You&#39;re here right. 🚀";
+const headerPicture = document.querySelector('.header__picture');
 
-function printNextWord () {  
-  let infoSection = document.querySelector('.js-info');
-  let array = info.split(' ');   
+const toggleSidebar = () => {
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar.style.right != "0px") {
+    sidebar.style.right = "0px";
+  } else {
+    sidebar.style.right = "-10000px";
+  }
+};
 
-  if (array.length > index) {
-    let wordToPrint = array[index];
-    infoSection.innerHTML += wordToPrint + ' ';
-    index++;
-  } 
-  setTimeout(printNextWord, 200); 
-}
-
-printNextWord();
- */
+headerPicture.addEventListener('click', toggleSidebar, false)
