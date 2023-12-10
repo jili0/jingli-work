@@ -215,6 +215,19 @@ summary {
     z-index: 100;
 }
 
+.header__ul {
+    list-style: none;
+    display: flex;
+}
+
+.header__ul a {
+    margin-right: 2vw;
+    font-size: var(--FS-NAVI);
+}
+
+.header__ul a:hover {
+    text-decoration: underline;
+}
 
 .header__title{
     font-weight: bold;
@@ -297,6 +310,20 @@ summary {
     font-family: var(--FF-CINZEL);
 }
 
+@media screen and (max-width: 1199px) {
+    .header__ul {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 6fr 3fr 1fr;
+        padding-inline: 16vh;
+    }
+}
 
 
 
