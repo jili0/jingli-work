@@ -15,7 +15,7 @@
 
     /* COLORS */
     --BGCOLOR-HEADING: white;
-    --BGCOLOR-SIDEBAR: rgba(255, 255, 255, 0.412);
+    --BGCOLOR-SIDEBAR: rgba(175, 181, 162, 0.948);
     --BGCOLOR-BODY: rgba(243, 242, 239, 0.594);
     --BGCOLOR-TABLE-HEAD: rgba(76, 94, 76, 0.929);
     --BGCOLOR-TABLE-FOOT: rgba(76, 94, 76, 0.138);
@@ -145,8 +145,9 @@ legend {
 
 
 table {
-    margin: 3vh;
     table-layout: fixed;
+    width: 90vw;
+    margin-inline: auto;
 }
 
 table caption{
@@ -188,7 +189,6 @@ tbody {
 
 tbody .td {
     width: 100%;
-    min-width: 25vh;
     border: var(--BORDER-TABLE);
     border-collapse: collapse;
     background-color: var(--BGCOLOR-TABLE-CELL);
