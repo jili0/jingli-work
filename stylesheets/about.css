@@ -33,3 +33,7 @@ details p {
   margin-bottom: 3vh;
   letter-spacing: -1px;
 }
+
+.utilityList{
+  list-style: none;
+}
