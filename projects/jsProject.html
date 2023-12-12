@@ -3,110 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-
-    body {
-      max-width: 800px;
-      margin-inline: auto;
-    }
-
-    input,button {
-      font: inherit;
-    }
-
-    header {
-      min-height: 10vh;
-      display: grid;
-      place-content: center;
-      background-color: aquamarine;
-    }
-
-    ol {
-      min-height: 50vh;
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(222, 220, 217);
-    }
-
-    li {
-      list-style: none;
-      margin: 0px;
-      text-align: center;
-      padding: 2vh;
-      background-color: beige;
-      border-bottom: 1px solid azure;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    li p {
-      display: inline-block;
-    }
-
-    li button {
-      display: inline-block;
-    }
-
-    fieldset {
-      border: none;
-      background-color: aliceblue;
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    input {
-      border: 1px solid antiquewhite;
-      border-radius: 5px;
-      padding: 1vh;
-      width: 100%;
-      margin: 1vh;
-    }
-
-    button {
-      border: none;
-      border-radius: 5px;
-      padding-inline: 1vh;
-      margin: 1vh;
-      background-color: lawngreen;
-    }
-
-    footer {
-      min-height: 5vh;
-      position: fixed;
-      background-color: lawngreen;
-      bottom: 0px;
-      left: 0px;
-      right:0px;
-      padding: 1vh;
-      display: grid;
-      place-content: center;
-    }
-
-  </style>
-  <script src="jsProject.js" defer></script>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="jsProject.css">
+  <script defer src="jsProject.js"></script>
 </head>
 <body>
-  <header>To do list</header>
-  <main>
-    <ol>
-      <li><p>Coding</p><button>remove</button></li>
-      <li><p>Eating</p><button>remove</button></li>
-      <li><p>Sleeping</p><button>remove</button></li>
-      <li><p>Smiling</p><button>remove</button></li>
-    </ol>
-    <fieldset>
-      <input type="text" placeholder="Add new to-do">
-      <button type="submit">Add</button>  
-    </fieldset>
-  </main>
-  <footer>Copyright &copy; 2023</footer>
+  <div class="container">
+    <input id="input" type="text" placeholder="Add your task here">
+    <button id="addTask"></button>
+  </div>
+  <div class="tasks">
+  </div>
 </body>
 </html>
-
-

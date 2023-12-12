@@ -1,0 +1,180 @@
+
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: min(3vh, 25px);
+  color: #3e6347;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input, button {
+  font-size: inherit;
+}
+
+/* END RESET */
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: rgba(230, 218, 237, 0.672);
+}
+
+.container {
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.094);
+  border-radius: 5px;
+  height: 15vh;
+  min-height: 5rem;
+  padding: 1.4rem 1rem;
+  background-color:rgb(243, 241, 161);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363), inset 2px 2px 5px rgba(255, 255, 255, 0.44);
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  place-content: center;
+}
+
+.container input {
+  height: 5vh;
+  min-height: 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-inline: 1vh;
+  transform: translateY(1vh);
+  padding: 0px 1vh;
+  background-color: rgba(126, 252, 0, 0);
+  border-bottom: 3px solid rgb(50, 108, 88);
+}
+
+.container input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#addTask {
+  margin-left: 1vh;
+  border: 1px solid rgba(80, 119, 68, 0.421);
+  width: 8vh;
+  height: 8vh;
+  border-radius: 4vh;
+  box-shadow: 1px 1px 5px black;
+  background-color: rgb(98, 181, 154);
+  position: relative;
+}
+
+#addTask::before {
+  content: "";
+  width: 4.5vh;
+  height: 0.8vh;
+  background-color: rgba(236, 245, 241);
+  position: absolute;
+  left: 22%;
+  top: 48%;
+  border-radius: 2px;
+}
+
+#addTask::after {
+  content: "";
+  width: 4.5vh;
+  height: 0.8vh;
+  background-color:rgba(236, 245, 241);
+  position: absolute;
+  left: 22%;
+  top: 48%;
+  transform: rotate(90deg);
+  border-radius: 2px;
+}
+
+#addTask:active {
+  box-shadow: inset 1px 1px 5px black;
+}
+
+.taskItem {
+  border: 1px solid rgba(0, 0, 0, 0.197);
+  border-radius: 5px;
+  background-color: rgba(255, 239, 213, 0.665);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.197);
+  min-height: 5vh;
+  width: 95%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 5fr 1fr 1fr;
+  margin-top: 2vh;
+  position: relative;
+}
+
+.taskText {
+  width: 90%;
+  padding: 1.5vh;
+  margin: 0.5vh;
+}
+
+.delete {
+  height: 5vh;
+  width: 5vh;
+  margin: 1vh;
+  background-color: rgba(122, 179, 64, 0.876);
+  border-radius: 2.5vh;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.258);
+}
+
+.delete::before {
+  content: "";
+  height: 0.5vh;
+  width: 1.5vh;
+  background-color: wheat;
+  position: absolute;
+  top: 53%;
+  right: 7.5%;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.delete::after {
+  content: "";
+  height: 0.5vh;
+  width: 2.5vh;
+  background-color: wheat;
+  position: absolute;
+  top: 47.5%;
+  right: 4%;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+.edit {
+  height: 5vh;
+  width: 5vh;
+  margin: 1vh;
+  background-color: rgb(84, 204, 237);
+  border-radius: 2.5vh;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.258);
+}
+
+.edit::before {
+  content: "";
+  height: 0.5vh;
+  width: 0.5vh;
+  background-color: wheat;
+  position: absolute;
+  top: 61.8%;
+  right: 23.2%;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.edit::after {
+  content: "";
+  height: 0.8vh;
+  width: 2.4vh;
+  background-color: wheat;
+  position: absolute;
+  top: 43%;
+  right: 19%;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
