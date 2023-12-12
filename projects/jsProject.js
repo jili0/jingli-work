@@ -36,6 +36,7 @@ const addObject = (taskId) => {
 }
 
 const updateObject = () => {
+  task = {};
   let objectKeys = Array.from(Object.keys(localStorage));
   objectKeys.forEach((key) => {
     let objectValue = localStorage.getItem(key).slice(1, -1);
