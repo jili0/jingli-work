@@ -58,14 +58,22 @@ const renderTask = (tasks) => {
 }
 
 const handleAdd = () => {
-  getInput();
-  generateId();
-  setStorage(taskId, task);
-  addObject(taskId);
-  renderTask(tasks);
-  input.style.backgroundColor = "";
-}
+  if (input.value){
+    getInput();
+    generateId();
+    setStorage(taskId, task);
+    updateObject();
+    renderTask(tasks);
+    input.style.backgroundColor = "";
+    input.style.border = "";
+    input.style.boxShadow = "";
+    input.value = "";
+    input.setAttribute("placeholder", "Add your task here");
+  } else {
+    input.setAttribute("placeholder", "Write something..");
+  }
 
+}
 // Functions of edit button
 
 
@@ -74,9 +82,9 @@ const edit = (e) => {
   input.value = e.target.previousElementSibling.innerText;
   localStorage.removeItem(e.target.previousElementSibling.id);
   e.target.parentElement.remove();
+  delete tasks[e.target.previousElementSibling.id];
   input.style.backgroundColor = "rgba(255, 239, 213, 0.665)";
   input.style.border = "1px solid rgba(0, 0, 0, 0.197)";
-  input.style.boxShadow = "1px 1px 2px black";
   input.style.boxShadow = "1px 1px 2px black";
 }
 
@@ -104,5 +112,6 @@ taskContainer.addEventListener('click', (e) => {
     e.stopPropagation();
   }
 });
-
+console.log(localStorage);
+console.log(tasks);
 
