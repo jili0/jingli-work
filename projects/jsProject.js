@@ -30,11 +30,6 @@ const setStorage = (taskId, task) => {
   localStorage.setItem(JSON.stringify(taskId), JSON.stringify(task));
 }
 
-const addObject = (taskId) => {
-  storedTask = localStorage.getItem(JSON.stringify(taskId)).slice(1,-1);
-  tasks[taskId] = storedTask;
-}
-
 const updateObject = () => {
   task = {};
   let objectKeys = Array.from(Object.keys(localStorage));
