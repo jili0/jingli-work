@@ -98,6 +98,12 @@ window.addEventListener('load', () => {
 });
 // Handle add button
 addButton.addEventListener('click', handleAdd);
+document.addEventListener('keydown', (e) => {
+  let key = e.key;
+  if (key === 'Enter') {
+    handleAdd();
+  }
+});
 // Handle edit and delete button
 taskContainer.addEventListener('click', (e) => {
   if (e.target.className === 'delete') {

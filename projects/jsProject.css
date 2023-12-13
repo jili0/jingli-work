@@ -19,7 +19,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  background-color: rgba(230, 218, 237, 0.672);
+  background-color: rgba(12, 140, 140, 0.672);
 }
 
 h2 {
@@ -27,6 +27,7 @@ h2 {
   width: 95%;
   margin-bottom: 1rem;
   font-size: min(4vh, 35px);
+  color: rgb(246, 248, 183);
 }
 
 .container {
@@ -99,27 +100,40 @@ h2 {
   box-shadow: inset 1px 1px 5px black;
 }
 
+.tasks {
+  max-height: 90vh;
+  overflow: auto;
+
+}
+
 .taskItem {
-  border: 1px solid rgba(0, 0, 0, 0.197);
-  border-radius: 5px;
-  background-color: rgba(255, 239, 213, 0.665);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.197);
-  min-height: 5vh;
   width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.094);
+  border-radius: 5px;
+  height: 15vh;
+  min-height: 5rem;
+  padding: 1.4rem 1rem;
+  background-color:rgb(243, 241, 161);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363), inset 2px 2px 5px rgba(255, 255, 255, 0.44);
   display: grid;
   place-content: center;
   grid-template-columns: 5fr 1fr 1fr;
-  margin-top: 2vh;
+  margin-top: 1vh;
   position: relative;
 }
 
 .taskText {
-  width: 90%;
-  padding: 1.5vh;
-  margin: 0.5vh;
+  width: 100%;
+  padding: 2px;
+  margin: 2px;
+  overflow: auto;
 }
 
+
 .delete {
+  position: absolute;
+  top: 25%;
+  right: 5%;
   height: 5vh;
   width: 5vh;
   margin: 1vh;
@@ -136,7 +150,7 @@ h2 {
   background-color: wheat;
   position: absolute;
   top: 53%;
-  right: 7.5%;
+  right: 48%;
   border-radius: 2px;
   transform: rotate(45deg);
 }
@@ -148,12 +162,15 @@ h2 {
   background-color: wheat;
   position: absolute;
   top: 47.5%;
-  right: 4%;
+  right: 13%;
   border-radius: 2px;
   transform: rotate(-45deg);
 }
 
 .edit {
+  position: absolute;
+  top: 25%;
+  right: 18%;
   height: 5vh;
   width: 5vh;
   margin: 1vh;
@@ -169,8 +186,8 @@ h2 {
   width: 0.5vh;
   background-color: wheat;
   position: absolute;
-  top: 61.8%;
-  right: 23.2%;
+  top: 70%;
+  right: 64%;
   border-radius: 2px;
   transform: rotate(45deg);
 }
