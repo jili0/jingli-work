@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: min(3vh, 35px);
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.gridContainer {
+  border: 1px solid rgba(62, 47, 47, 0.223);
+  height: 80vh;
+  width: 80vw;
+  max-width: 30rem;
+  margin-inline: auto;
+  margin-top: 5rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1vh;
+  place-content: center;
+  background-color: rgb(104, 148, 187);
+}
+
+.display {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(147, 164, 144);
+  color: whitesmoke;
+  padding-inline: 2vh;
+  min-height: 20vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.displayTop {
+min-height: 5vh;
+display: flex;
+justify-content: flex-start;
+}
+
+.displayBottom {
+min-height: 5vh;
+display: flex;
+justify-content: flex-end;
+}
+
+.gridContainer button {
+  height: 11vh;
+  border: 1px solid rgb(147, 164, 144);
+}
+
+.gridContainer button:hover {
+  background-color: rgba(255, 255, 255, 0.725);
+}
+
+.gridContainer button:active {
+  opacity: 0.8;
+
+}
+
+.spanAC {
+  grid-column: 1 / span 2;
+}
+
+.spanEqual {
+  grid-column: span 2/ -1;
+}
