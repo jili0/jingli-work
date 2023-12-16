@@ -31,7 +31,7 @@ const setStorage = (taskId, task) => {
 }
 
 const updateObject = () => {
-  task = {};
+  tasks = {};
   let objectKeys = Array.from(Object.keys(localStorage));
   objectKeys.forEach((key) => {
     let objectValue = localStorage.getItem(key).slice(1, -1);
@@ -55,10 +55,10 @@ const renderTask = (tasks) => {
 
 const handleAdd = () => {
   if (input.value){
-    getInput();
-    generateId();
-    setStorage(taskId, task);
-    updateObject();
+    getInput(); //return task
+    generateId(); //return an taskId
+    setStorage(taskId, task); //save task in localStorage
+    updateObject(); //update task list (saved as an Object)
     renderTask(tasks);
     input.style.backgroundColor = "";
     input.style.border = "";
@@ -68,11 +68,8 @@ const handleAdd = () => {
   } else {
     input.setAttribute("placeholder", "Write something..");
   }
-
 }
 // Functions of edit button
-
-
 
 const edit = (e) => {
   input.value = e.target.previousElementSibling.innerText;
@@ -114,6 +111,6 @@ taskContainer.addEventListener('click', (e) => {
     e.stopPropagation();
   }
 });
-console.log(localStorage);
-console.log(tasks);
+
+
 
