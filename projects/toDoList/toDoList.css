@@ -48,8 +48,6 @@ h2 {
   height: 5vh;
   min-height: 2rem;
   border: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   margin-inline: 1vh;
   transform: translateY(1vh);
   padding: 0px 1vh;
