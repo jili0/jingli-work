@@ -19,11 +19,11 @@ const data = [
     href: "https://jiliblog.netlify.app/",
   },
   {
-    imgSrc: "https://picsum.photos/800/800",
+    imgSrc: "images/toDoList.png",
     title: "To do List",
     description:
       "A To-Do-List, writing in vanilla javascript. It&apos;s not online yet.",
-    href: "https://jili0.github.io/portfolio/",
+    href: "https://jili0.github.io/to-do-list/",
   },
 ];
 
@@ -35,12 +35,12 @@ const projectsArray = data.map(
     description,
     href,
   }) => `<div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center position-relative">
-  <div class="card pb-5 my-5" style="width: 18rem">
+  <div class="card pb-5 my-3" style="width: 18rem; height: 60vh;">
 <img
   src=${imgSrc}
   target="_blank"
-  class="card-img-top"
-  style="margin-bottom: 10vh;"
+  class="card-img-top h-100 object-fit-contain"
+  style="background-color: #fff; object-position:top;"
   alt=${title}
 />
 <div class="card-body position-absolute bottom-0 left-0 right-0 bg-light col-12">
@@ -48,7 +48,7 @@ const projectsArray = data.map(
   <p class="card-text" style="height: 10vh; overflow: auto">
   ${description}
   </p>
-  <a class="btn btn-primary" href=${href}>Go to ${title}</a>
+  <a class="btn btn-primary" href=${href} target="_blank">Go to ${title}</a>
 </div>
 </div>
 </div>`
