@@ -22,7 +22,7 @@ const data = [
     imgSrc: "images/toDoList.png",
     title: "To do List",
     description:
-      "A To-Do-List, writing in vanilla javascript. It&apos;s not online yet.",
+      "A To-Do-List, writing in vanilla javascript.",
     href: "https://jili0.github.io/to-do-list/",
   },
 ];
