@@ -10,7 +10,7 @@ const data = [
     title: "MoodPad",
     description:
       "Each user, after logging in, can create, read, update and write his or her posts here. The user can also change the user name and the profile picture. Everything is saved in Firebase and can be synchronized.",
-    href: "https://jili0.github.io/react-project/",
+    href: "https://jili0.github.io/mood-pad/",
   },
   {
     imgSrc: "https://picsum.photos/800/800",
