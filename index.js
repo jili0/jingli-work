@@ -10,7 +10,7 @@ const data = [
     title: "MoodPad",
     description:
       "Each user, after logging in, can create, read, update and write his or her posts here. The user can also change the user name and the profile picture. Everything is saved in Firebase and can be synchronized.",
-    href: "https://jili0.github.io/portfolio/",
+    href: "https://jili0.github.io/react-project/",
   },
   {
     imgSrc: "https://picsum.photos/800/800",
@@ -38,6 +38,7 @@ const projectsArray = data.map(
   <div class="card pb-5 my-5" style="width: 18rem">
 <img
   src=${imgSrc}
+  target="_blank"
   class="card-img-top"
   style="margin-bottom: 10vh;"
   alt=${title}
