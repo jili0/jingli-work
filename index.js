@@ -1,5 +1,11 @@
 const data = [
   {
+    imgSrc: "https://picsum.photos/800/800",
+    title: "My Notizbuch",
+    description: "This is my online notizbuch",
+    href: "https://jili0.github.io/notes/",
+  },
+  {
     imgSrc: "images/portfolio_400_477.png",
     title: "My Portfolio",
     description: "This is my portfolio",
